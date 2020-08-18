@@ -1,0 +1,43 @@
+@media only screen and (max-width: 900px) {
+    #header .nav .depth1 > li a {
+        display: block;
+        padding: 0px 20px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #header {
+        position: relative;
+    }
+    #header h1 {
+        text-align: center;
+    }
+    #header .open_nav {
+        display: block;
+        position: absolute; top: 50%; left: 10px;
+        transform: translateY(-50%);
+    }
+    #header .open_nav span {
+        display: block;
+        width: 25px; height: 3px;
+        background: black;
+        border-radius: 10px;
+        margin: 5px 0px;
+    }
+    #header .nav {
+        position: absolute; top: 100%; right: 0px;
+        transform: translateY(0%);
+        width: 100%;
+        text-align: center;
+        /* display: none; */
+    }
+    #header .nav .depth1 > li {
+        float: left;
+        width: 25%;
+    }
+    #header .nav .depth1 > li a {
+        display: block;
+        padding: 0px 40px;
+        background: rgba(0,255,200,0.5);
+        border: 1px solid rgba(0,255,200,1);
+    }
+}

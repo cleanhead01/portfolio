@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import url("reset.css");
+
+
+
+
+body, html {
+    height: 100%;
+}
+
+#header {
+    width: 300px; height: 100%;
+    background: rgba(29.41%,29.41%,29.41%,0.3);
+    position: fixed;
+}
+/* 헤더 로고 이미지 -------------------------------------------------------------------------------------- */
+.header h1 {
+    position: absolute; top: 15%; left: 50%;
+    transform: translateX(-50%);
+}
+/* 헤더 메뉴 박스 ---------------------------------------------------------------------------------------- */
+.header .nav_box {
+    position: absolute; top: 35%; left: 50%;
+    transform: translateX(-50%);
+    font-size: 27px;
+    text-align: center;
+}
+.header .nav_box li {
+    padding: 30px 0px;
+}
+.header .open_button {
+    border: 1px solid #999;
+    width: 20px; height: 100%;
+    position: absolute; top: 0px; right: 0px;
+}
+.header .open_button > div {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 10px;
+}
+/* article1 --------------------------------------------------------------------------------------------- */
+/* 백그라운드 -------------------------------------------------------------------------------------------- */
+#section {
+    height: 100%;
+}
+#article1 {
+    background: url(../images/asd.jpg) no-repeat;
+    background-position: center bottom; 
+    background-size: cover;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
