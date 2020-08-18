@@ -24,6 +24,7 @@ body, html {
     transform: translateX(-50%);
     font-size: 27px;
     text-align: center;
+    color: #ffffff;
 }
 .header .nav_box li {
     padding: 30px 0px;
