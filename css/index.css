@@ -45,12 +45,52 @@ body, html {
     height: 100%;
 }
 #article1 {
-    background: url(../images/asd.jpg) no-repeat;
-    background-position: center bottom; 
+    background: url(../images/back_1.jpg) no-repeat;
+    background-position: center; 
     background-size: cover;
     height: 100%;
 }
-
+/* 조명 ------------------------------------------------------------------------------------------------- */
+.art1_back {
+    position: relative;
+    height: 100%;
+}
+.art1_back::before {
+    position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px;
+    background: black;
+    z-index: 999999999;
+}
+.art1_back .light {
+    position: absolute; top: 4%; left: 50%;
+    transform: translateX(-50%);
+    width: 150px; height: auto;
+}
+.art1_back .light img {
+    width: 100%;
+}
+/* 의자 ------------------------------------------------------------------------------------------------- */
+.art1_back .chair {
+    position: absolute; bottom: 3%; left: 50%;
+    transform: translateX(-50%);
+}
+.art1_back .chair img {
+    width: 650px; height: auto;
+}
+/* 스피커 ----------------------------------------------------------------------------------------------- */
+.art1_back .speaker {
+    position: absolute; bottom: 20%; left: 40%;
+    transform: translateX(-50%);
+}
+/* 액자 ------------------------------------------------------------------------------------------------- */
+.art1_back .prame {
+    position: absolute; bottom: 20%; left: 50%;
+    transform: translateX(-50%);
+}
+/* 콘센트 ----------------------------------------------------------------------------------------------- */
+.art1_back .socket {
+    position: absolute; bottom: 20%; left: 78%;
+    transform: translateX(-50%);
+}
 
 
 
