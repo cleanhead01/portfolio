@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url("reset.css");
+@import url("animate.css");
 
 
 
@@ -8,5 +9,66 @@
 .waiting-box {
     width: 100%; height: 100%;
     position: fixed; top: 0px; left: 0px;
-    background: red;
+    background: #fff;
 }
+/* 전체로고----------------------------------------------------------------------------------- */
+.wait-all {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* 로고 애니메이션---------------------------------------------------------------------------- */
+.wait-all img {
+    animation: wait-all 1s 2.6s both;
+}
+.wait-each img:nth-child(1) {
+    animation: wait1 3s both ease-in-out;
+}
+.wait-each img:nth-child(2) {
+    animation: wait2 3s both ease-in-out ;
+}
+.wait-each img:nth-child(3) {
+    animation: wait3 3s both ease-in-out;
+}
+.wait-each img:nth-child(4) {
+    animation: wait4 3s both ease-in-out ;
+}
+.wait-each img:nth-child(5) {
+    animation: wait5 3s both ease-in-out ;
+}
+.wait-each img:nth-child(6) {
+    animation: wait6 3s both ease-in-out ;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
