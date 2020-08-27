@@ -1,43 +1,135 @@
 @charset "utf-8";
 @import url("reset.css");
 @import url("animate.css");
+@font-face {
+    font-family: 'TmoneyRoundWindExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
 
 
+
+/* body, html {
+    height: 100%; width: 100%;
+} */
+
+
+/* 로딩페이지--------------------------------------------------------------------------------- */
 .waiting-box {
     width: 100%; height: 100%;
     position: fixed; top: 0px; left: 0px;
     background: #fff;
+    z-index: 99999;
 }
-/* 전체로고----------------------------------------------------------------------------------- */
+/* 전체로고 */
 .wait-all {
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
 }
-/* 로고 애니메이션---------------------------------------------------------------------------- */
+/* 로고 애니메이션 */
 .wait-all img {
-    animation: wait-all 1s 2.6s both;
+    animation: wait-all 1.8s 2.7s both;
 }
 .wait-each img:nth-child(1) {
     animation: wait1 3s both ease-in-out;
 }
 .wait-each img:nth-child(2) {
-    animation: wait2 3s both ease-in-out ;
+    animation: wait2 3s both ease-in-out;
 }
 .wait-each img:nth-child(3) {
     animation: wait3 3s both ease-in-out;
 }
 .wait-each img:nth-child(4) {
-    animation: wait4 3s both ease-in-out ;
+    animation: wait4 3s both ease-in-out;
 }
 .wait-each img:nth-child(5) {
-    animation: wait5 3s both ease-in-out ;
+    animation: wait5 3s both ease-in-out;
 }
 .wait-each img:nth-child(6) {
-    animation: wait6 3s both ease-in-out ;    
+    animation: wait6 3s both ease-in-out;    
 }
+/* 튜토리얼 텍스트---------------------------------------------------------------------------- */
+#header {
+    /* position: relative; */
+    /* width: 100%; height: 100%; */
+}
+.tuto-box {
+    /* background: green; */
+    width: 100%; height: 100%;
+    position: absolute; top: 0px; left: 0px;
+}
+/* 튜토리얼 이미지---------------------------------------------------------------------------- */
+.tuto-box .img-box {
+    position: absolute; bottom: 55%; left: 45%;
+    transform: translateX(-45%);
+    /* border: 1px solid black; */
+    /* height: 300px; */
+}
+.tuto-box .img-box img:nth-child(1) {
+    transform: translateX(20px);
+    /* border: 1px solid black; */
+    display: inline-block;
+}
+.tuto-box .img-box img:nth-child(2) {
+    transform: translateX(120px);
+    display: inline-block;
+}
+.tuto-box .img-box img:nth-child(3) {
+    display: block;
+}
+/* 튜토리얼 텍스트---------------------------------------------------------------------------- */
+.tuto-box .tuto-txt {
+    position: absolute; top: 50%; left: 45%;
+    transform: translateX(-45%);
+    /* border: 1px solid black; */
+}
+.tuto-box .tuto-txt h2 {
+    font-size: 40px; font-family: 'TmoneyRoundWindExtraBold';
+    padding: 20px 0px;
+}
+.tuto-box .tuto-txt h3 {
+    font-size: 30px; font-family: 'TmoneyRoundWindExtraBold';
+    padding-bottom: 30px;
+    color: brown;
+}
+.tuto-box .tuto-txt p {
+    font-size: 20px; font-family: 'TmoneyRoundWindExtraBold';
+    padding-bottom: 10px;
+}
+/* 아이콘 */
+.tuto-box .tuto-txt i {
+    padding: 0px 5px;
+}
+/* 버튼 */
+.tuto-box .tuto-txt .start-btn {
+    padding: 30px 0px;
+}
+.tuto-box .tuto-txt .start-btn input {
+    border-radius: 20px;
+    font-family: 'TmoneyRoundWindExtraBold'; font-size: 15px;
+    width: 100px; height: 50px;
+}
+/* 메인 페이지----------------------------------------------------------------------------- */
+.article1 {
+    position: relative;
+}
+.article1 .img-box img {
+    position: absolute; bottom: 0px;
+}
+
+
+
+
+
+
+
+            
+
+
 
 
 
