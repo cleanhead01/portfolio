@@ -13,9 +13,9 @@
 
 
 
-/* body, html {
+body, html {
     height: 100%; width: 100%;
-} */
+}
 
 
 /* 로딩페이지--------------------------------------------------------------------------------- */
@@ -55,11 +55,11 @@
 /* 튜토리얼 텍스트---------------------------------------------------------------------------- */
 #header {
     /* position: relative; */
-    /* width: 100%; height: 100%; */
+    height: 100%;
 }
 .tuto-box {
     /* background: green; */
-    width: 100%; height: 100%;
+    height: 100%; width: 100%;
     position: absolute; top: 0px; left: 0px;
 }
 /* 튜토리얼 이미지---------------------------------------------------------------------------- */
@@ -114,12 +114,56 @@
     width: 100px; height: 50px;
 }
 /* 메인 페이지----------------------------------------------------------------------------- */
+#section {
+    height: 100%; 
+    /* position: relative; */
+}
 .article1 {
     position: relative;
+    height: 100%;
 }
-.article1 .img-box img {
+/* 파도 */
+.article1 .img-box img:nth-child(1) {
+    position: absolute; top: 150px;
+    z-index: 9;
+    width: 100%;
+}
+/* 개복치 */
+.article1 .img-box img:nth-child(2) {
+    position: absolute; bottom: 150px; left: 100px;
+}
+/* 종이배 */
+.article1 .img-box img:nth-child(3) {
+    position: absolute; top: 80px; left: 70%;
+    z-index: 8;
+}
+/* 갈매기 */
+.article1 .img-box img:nth-child(4) {
+    position: absolute; top: 80px; left: 75%;
+}
+/* 모래바닥 */
+.article1 .img-box img:nth-child(5) {
     position: absolute; bottom: 0px;
+    width: 100%;
 }
+/* 산호초1 */
+.article1 .img-box img:nth-child(6) {
+    position: absolute; bottom: 99px; left: 40%;
+}
+/* about me 미역----------------------------------------------------------------------------- */
+.article1 .about-me {
+    position: absolute; bottom: 99px; right: 25%;
+    /* border: 1px solid black; */
+}
+.article1 .about-me img {
+    vertical-align: bottom;
+}
+
+
+
+
+
+
 
 
 
