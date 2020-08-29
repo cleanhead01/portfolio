@@ -130,7 +130,7 @@ body, html {
 }
 /* 개복치 */
 .article1 .img-box img:nth-child(2) {
-    position: absolute; bottom: 150px; left: 100px;
+    position: absolute; bottom: 120px; left: 100px;
 }
 /* 종이배 */
 .article1 .img-box img:nth-child(3) {
@@ -150,17 +150,213 @@ body, html {
 .article1 .img-box img:nth-child(6) {
     position: absolute; bottom: 99px; left: 40%;
 }
+/* 치어떼 */
+.article1 .img-box img:nth-child(7) {
+    position: absolute; top: 30%; left: 50%;
+}
+
 /* about me 미역----------------------------------------------------------------------------- */
-.article1 .about-me {
-    position: absolute; bottom: 99px; right: 25%;
+.article1 .seaweed1 {
+    position: absolute; bottom: 63px; right: 25%;
     /* border: 1px solid black; */
 }
-.article1 .about-me img {
+.article1 .seaweed1 img {
     vertical-align: bottom;
 }
-
-
-
+/* about me 미역 텍스트---------------------------------------------------------------------- */
+.article1 .seaweed1 .click {
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.article1 .seaweed1 .click i {
+    animation: click 1s infinite;
+    transform: translateY(20%);
+    color: blue;
+}
+/* about me 미역 page----------------------------------------------------------------------- */
+.article1 .about-me {
+    z-index: 999999;
+    position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
+    background: rgba(0,0,0,0.5);
+    transition: all 0.5s;
+    display: none;
+}
+/* 클릭 이벤트 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.article1 .about-me.on {
+    display: block;
+}
+/* 클릭 이벤트 ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+.article1 .about-me .about-list {
+    background: #fff;
+    /* display: inline-block; */
+    position: absolute; top: 0; left: 18%; right: 18%; bottom: 0px;
+}
+.article1 .about-me .about-list .profile {
+    position: absolute; top: 20%; left: 30%;
+    transform: translateX(-50%);
+}
+/* 한줄코멘트 */
+.article1 .about-me .about-list .comment {
+    text-align: center;
+    font-size: 60px; font-family: 'TmoneyRoundWindExtraBold';
+    padding: 30px 0px;
+}
+/* 프로필 사진 */
+.article1 .about-me .about-list .photo {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 100px;
+}
+/* 텍스트 */
+.article1 .about-me .about-list .text {
+    display: inline-block;
+}
+.article1 .about-me .about-list .text h3 {
+    font-size: 30px; font-family: 'TmoneyRoundWindExtraBold';
+}
+.article1 .about-me .about-list .text p {
+    font-size: 20px;
+    padding: 10px 0px 20px 5px;
+}
+/* 커리어------------------------------------------------------------------------------------- */
+.article1 .about-me .about-list .career {
+    position: absolute; bottom: 180px;
+    transform: translateX(5%);
+}
+.article1 .about-me .about-list .career > ul:nth-child(1) {
+    position: relative; left: 5%;
+}
+.article1 .about-me .about-list .career > ul:nth-child(1)::before {
+    content: "";
+    position: absolute; top: 25%; left: 30px;
+    height: 2px; width: 981px;
+    background: black;
+}
+.article1 .about-me .about-list .career > ul:nth-child(1)::after {
+    content: "";
+    position: absolute; top: 16px; right: 32px;
+    height: 120px; width: 2px;
+    background: black;
+}
+.article1 .about-me .about-list .career > ul:nth-child(2) {
+    text-align: right;
+    position: relative; top: 56px; left: 52px;
+}
+.article1 .about-me .about-list .career > ul:nth-child(2)::before {
+    content: "";
+    position: absolute; top: 16px; right: 30px;
+    height: 2px; width: 600px;
+    background: black;
+}
+/* 텍스트 */
+.article1 .about-me .about-list .career li {
+    display: inline-block;
+    vertical-align: top;
+}
+.article1 .about-me .about-list .career .year {
+    font-size: 18px;
+    background: black; color: #fff;
+    width: 50px; height: 50px; line-height: 50px;
+    border: 1px solid black; border-radius: 50%;
+    position: relative; top: -10px;
+    /* before, after보다 앞으로 나올 수 있게 relative */
+    margin: 0px 20px;
+    text-align: center;
+}
+.article1 .about-me .about-list .career .month {
+    text-align: center; 
+    padding: 5px 50px 15px;
+    font-size: 13px;
+    position: relative;
+}
+.article1 .about-me .about-list .career .month > span {
+    font-size: 16px;
+    color: #8f784b;
+    animation: month 2s infinite ease-out;
+    position: relative; 
+    /* before, after보다 앞으로 나올 수 있게 relative */
+    cursor: pointer;
+}
+/* 커리어 서브메뉴----------------------------------------------------------------------------- */
+/* 첫번째 ul메뉴의 서브메뉴 */
+.article1 .about-me .about-list .career > ul:nth-child(1) .month li {
+    position: absolute; bottom: 150%; left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    width: 300px;
+    padding-bottom: 10px;
+    display: none;
+}
+.article1 .about-me .about-list .career > ul:nth-child(1) .month li::before {
+    content: "";
+    position: absolute; top: 207%; left: 50%;
+    transform: translateX(-50%);
+    width: 2px; height: 0px;
+    animation: month-be1 0.5s both;
+    background: black;
+}
+.article1 .about-me .about-list .career > ul:nth-child(1) .month li::after {
+    content: "";
+    position: absolute; top: 207%; left: 50%;
+    transform: translateX(-50%);
+    width: 5px; height: 5px;
+    background: hotpink;
+    animation: month-af1 0.5s both;
+}
+.article1 .about-me .about-list .career > ul:nth-child(1) .month li span {
+    font-size: 13px;
+    /* display: inline-block; */
+    animation: month-sp 1s both;
+}
+/* 두번째 ul메뉴의 서브메뉴 */
+.article1 .about-me .about-list .career > ul:nth-child(2) .month li {
+    position: absolute; top: 150%; left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    width: 300px;
+    padding-bottom: 10px;
+    display: none;
+}
+.article1 .about-me .about-list .career > ul:nth-child(2) .month li::before {
+    content: "";
+    position: absolute; bottom: 207%; left: 50%;
+    transform: translateX(-50%);
+    width: 2px; height: 0px;
+    background: black;
+    animation: month-be2 0.5s both;
+}
+.article1 .about-me .about-list .career > ul:nth-child(2) .month li::after {
+    content: "";
+    position: absolute; bottom: 207%; left: 50%;
+    transform: translateX(-50%);
+    width: 5px; height: 5px;
+    background: hotpink;
+    animation: month-af2 0.5s both;
+}
+.article1 .about-me .about-list .career > ul:nth-child(2) .month li span {
+    font-size: 13px;
+    /* display: inline-block; */
+    /* display: none; */
+    animation: month-sp 1s both;
+}
+/* 클릭 이벤트 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.article1 .about-me .about-list .career .month.on ul li {
+    display: block;
+}
+/* 클릭 이벤트 ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+/* about me 나가기 버튼--------------------------------------------------------------------- */
+.article1 .about-me .about-list .close {
+    position: absolute; top: 50px; right: 5%;
+    text-align: center;
+    font-weight: bold;
+}
+.article1 .about-me .about-list .close i {
+    font-size: 50px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
 
 
 
