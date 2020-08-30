@@ -183,7 +183,7 @@ body, html {
     z-index: 999999;
     position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
     background: rgba(0,0,0,0.5);
-    transition: all 0.5s;
+    /* transition: all 1s; */
     display: none;
 }
 /* 클릭 이벤트 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
