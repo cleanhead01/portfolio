@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 
-
+/* 로딩페이지 얼굴로고 */
 @keyframes wait-all {
     0% {
         opacity: 0;
@@ -177,6 +177,7 @@
         opacity: 0;
     }
 }
+/* 산호초+미역의 클릭버튼 */
 @keyframes click {
     0% {
         transform: translateY(20%);
@@ -195,6 +196,7 @@
         color: pink;
     }
 }
+/* 커리어 월별버튼 색깔 */
 @keyframes month {
     0% {
         color: black;
@@ -214,6 +216,7 @@
         color: black;
     }
 }
+/* 커리어 월별버튼 클릭시 나타나는 선 */
 @keyframes month-be1 {
     0% {
         height: 0px;
@@ -280,6 +283,7 @@
         bottom: 100%;
     }
 }
+/* 커리어 월별버튼 클릭시 나타나는 커리어내용 */
 @keyframes month-sp {
     0% {
         opacity: 0;
@@ -299,3 +303,53 @@
         width: auto;
     }
 }
+/* 죽은 물고기 */
+@keyframes die-fish {
+    0% {
+        transform: translateY(0%);
+    }
+    10% {}
+    20% {}
+    30% {}
+    40% {}
+    50% {}
+    60% {}
+    70% {}
+    80% {}
+    90% {}
+    100% {
+        transform: translateY(-500%);
+    }
+}
+/* 컨택트 전송버튼 클릭시 움직이는 생선뼈 */
+@keyframes contact {
+    0% {}
+    10% {}
+    20% {}
+    30% {}
+    40% {}
+    50% {}
+    60% {}
+    70% {}
+    80% {}
+    90% {}
+    100% {}
+}
+/* 재도전버튼 */
+@keyframes turn {
+    0% {}
+    10% {}
+    20% {}
+    30% {}
+    40% {}
+    50% {}
+    60% {}
+    70% {}
+    80% {}
+    90% {
+        /* transform: rotate(1turn); */
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+} 

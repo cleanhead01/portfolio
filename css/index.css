@@ -451,6 +451,249 @@ body, html {
 
 
 
+/* portfoilo 나가기 버튼--------------------------------------------------------------------- */
+.article2 .portfolio .port-list .close {
+    position: absolute; top: 50px; right: 5%;
+    text-align: center;
+    font-weight: bold;
+}
+.article2 .portfolio .port-list .close i {
+    font-size: 50px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+
+
+
+/* 메인 페이지3----------------------------------------------------------------------------- */
+.article3 {
+    height: 100%;
+    position: relative;
+}
+/* 파도 */
+.article3 .img-box img:nth-child(1) {
+    position: absolute; top: 150px;
+    z-index: 9;
+    /* 종이배보다 앞으로 */
+    width: 100%;
+}
+/* 종이배 */
+.article3 .img-box img:nth-child(2) {
+    position: absolute; top: 80px; left: 70%;
+    z-index: 8;
+    /* 파도보다 뒤로 */
+}
+/* 갈매기 */
+.article3 .img-box img:nth-child(3) {
+    position: absolute; top: 80px; left: 75%;
+}
+/* 모래바닥 */
+.article3 .img-box img:nth-child(4) {
+    position: absolute; bottom: 0px;
+    width: 100%;
+}
+/* 산호초1 */
+.article3 .img-box img:nth-child(5) {
+    position: absolute; bottom: 99px; right: 50%;
+}
+/* 치어떼 */
+.article3 .img-box img:nth-child(6) {
+    position: absolute; top: 30%; left: 35%;
+}
+/* skill 미역----------------------------------------------------------------------------- */
+.article3 .seaweed1 {
+    position: absolute; bottom: 57px; left: 21%;
+    /* border: 1px solid black; */
+}
+.article3 .seaweed1 img {
+    vertical-align: bottom;
+}
+/* 컨택트 미역----------------------------------------------------------------------------- */
+.article3 .seaweed2 {
+    position: absolute; bottom: 57px; right: 20%;
+}
+/* .article3 .seaweed2 img {
+    vertical-align: bottom;
+} */
+/* skill 미역 텍스트---------------------------------------------------------------------- */
+.article3 .seaweed1 .click {
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.article3 .seaweed1 .click i {
+    animation: click 1s infinite;
+    transform: translateY(20%);
+    color: blue;
+}
+.article3 .seaweed1 .click {
+    font-size: 20px;
+}
+/* contact 미역 텍스트---------------------------------------------------------------------- */
+.article3 .seaweed2 .click {
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.article3 .seaweed2 .click i {
+    animation: click 1s infinite;
+    transform: translateY(20%);
+    color: blue;
+}
+.article3 .seaweed2 .click {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/* contact 페이지---------------------------------------------------------------------------- */
+.article3 .contact {
+    z-index: 999999;
+    position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+/* 클릭 이벤트 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.article3 .contact.on {
+    display: block;
+}
+/* 클릭 이벤트 ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+.article3 .contact .contact-list {
+    background: #fff;
+    /* display: inline-block; */
+    position: absolute; top: 0; left: 18%; right: 18%; bottom: 0px;
+}
+.article3 .contact .contact-list .profile {
+    position: absolute; top: 20%; left: 30%;
+    transform: translateX(-50%);
+}
+/* 한줄코멘트 */
+.article3 .contact .contact-list .comment {
+    text-align: center;
+    font-size: 60px; font-family: 'TmoneyRoundWindExtraBold';
+    padding: 30px 0px;
+}
+/* 컨택트 투역 생선가시 박스----------------------------------------------------------------- */
+.article3 .contact .contact-list .die-fish img:nth-child(1) {
+    position: absolute; top: 50%; left: 25px;
+    transform: translateY(-50%);
+}
+.article3 .contact .contact-list .die-fish img:nth-child(2) {
+    position: absolute; top: 50%; right: 25px;
+    transform: translateY(-50%);
+}
+/* 애니메이션 이벤트 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.article3 .contact .contact-list > .die-fish {
+    /* animation: contact 1s infinite; */
+}
+.article3 .contact .contact-list .inquiry-form {
+    /* border: 1px solid black; */
+    /* animation: contact 1s infinite; */
+}
+/* 애니메이션 이벤트 ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+/* 컨택트 구역------------------------------------------------------------------------------- */
+.article3 .inquiry-form {
+    border: 3px solid black;
+    width: 600px; height: 400px;
+    padding: 0px 10px;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* 폼태그 안에 라벨속성 */
+.article3 .inquiry-form label {
+    display: block;
+    font-size: 20px; font-family: 'TmoneyRoundWindExtraBold';
+    padding: 15px 0px 10px 10px;
+}
+/* 폼태그 안에 인풋+셀렉트 속성 */
+.article3 .inquiry-form input,
+.article3 .inquiry-form select {
+    width: 100px; height: 25px;
+    padding-left: 10px;
+    border: 1px solid #ccc; border-radius: 10px;
+    background: #eee;
+    vertical-align: top;
+}
+/* 셀렉트 옵션 백그라운드 */
+.article3 .inquiry-form select option {
+    background: #fff;
+}
+/* 사진등록 구역---------------------------- */
+.article3 .inquiry-form .photo {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+.article3 .inquiry-form .photo img {
+    padding: 50px 50px 10px;
+}
+/* 사진등록 텍스트 */
+.article3 .inquiry-form .photo input {
+    width: 60px; height: 25px;
+    display: block;
+    margin: 0px auto; padding: 0px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.article3 .inquiry-form .photo input:hover {
+    width: 60px; height: 25px;
+    display: block;
+    margin: 0px auto; padding: 0px;
+    border-radius: 50px;
+    font-weight: bold;
+    background: hotpink; border: 1px solid pink; color: #fff;
+    transition: all 0.5s;
+}
+/* 인포메이션 구역---------------- */
+.article3 .inquiry-form .infor {
+    /* display: inline-block; */
+    /* border: 1px solid black; */
+    float: right;
+}
+/* 메모하기 */
+.article3 .inquiry-form .memo textarea {
+    resize: none;
+    width: 570px; height: 100px;
+    padding: 10px 0px 0px 10px;
+}
+/* 용궁으로 전송버튼----------------------------------------------------------------------- */
+.article3 .inquiry-form .submit {
+    position: absolute; top: 105%; left: 50%;
+    transform: translateX(-50%);
+}
+.article3 .inquiry-form .submit button {
+    font-size: 20px; font-weight: bold;
+    /* font-family: 'TmoneyRoundWindExtraBold'; */
+    padding: 15px 25px; 
+    border-radius: 50px;
+    background: red; color: #fff;
+}
+.article3 .inquiry-form .submit button:hover {
+    font-size: 20px; font-weight: bold;
+    /* font-family: 'TmoneyRoundWindExtraBold'; */
+    padding: 15px 25px; 
+    border-radius: 50px;
+    background: blue; color: #fff;
+    transition: all 0.5s;
+}
+/* contact 나가기 버튼--------------------------------------------------------------------- */
+.article3 .contact .contact-list .close {
+    position: absolute; top: 50px; right: 5%;
+    text-align: center;
+    font-weight: bold;
+}
+.article3 .contact .contact-list .close i {
+    font-size: 50px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
 
 
 
@@ -471,6 +714,100 @@ body, html {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 게임오버 페이지-------------------------------------------------------------------------- */
+.article4 {
+    height: 100%;
+    position: relative;
+}
+/* 게임오버 텍스트 */
+.article4 h2 {
+    position: absolute; top: 20%; left: 50%;
+    transform: translateX(-50%);
+    font-size: 80px;
+    letter-spacing: 0.5em;
+    z-index: 1;
+}
+/* 재도전 구역------------------------------------------------------------------------------- */
+.article4 .return {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-top: 100px;
+}
+.article4 .return > div {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 50px;
+}
+/* 죽은 개복치 이미지 */
+.article4 .return .fish {
+    animation: die-fish 30s both linear;
+    z-index: 2;
+}
+/* 재도전 버튼 구역 */
+.article4 .return .retu div {
+    position: relative;
+    border: 5px solid black;
+    width: 250px; height: 250px;
+    line-height: 250px;
+    margin-right: 10px;
+    /* h3의 letter의 가운데 정렬을 위해서 오른쪽에 h3크기의 0.5em(10px)을 넣어준다. */
+}
+.article4 .return .retu img:nth-child(1) {
+    animation: turn 3s infinite linear;
+}
+.article4 .return .retu img:nth-child(2) {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; height: auto;
+}
+/* 재도전 텍스트 */
+.article4 .return .retu h3 {
+    font-size: 30px; font-family: 'TmoneyRoundWindExtraBold';
+    padding-top: 20px;
+    letter-spacing: 0.5em;
+    /* 가운데 정렬이 안되서 위에 div 오른쪽에 h3의 0.5em(10px)을 추가해서 가운데 정렬 */
+}
 
 
 
