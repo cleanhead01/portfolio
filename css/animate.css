@@ -353,3 +353,94 @@
         transform: rotate(1turn);
     }
 } 
+/* html */
+@keyframes htmlscore {
+    0% {
+        height: 0%;
+    }
+    10% {}
+    20% {}
+    30% {}
+    40% {}
+    50% {}
+    60% {}
+    70% {}
+    80% {}
+    90% {}
+    100% {
+        height: 90%;
+        opacity: 1;
+    }
+}
+@keyframes cssscore {
+    0% {
+        height: 0%;
+    }
+    10% {}
+    20% {}
+    30% {}
+    40% {}
+    50% {}
+    60% {}
+    70% {}
+    80% {}
+    90% {}
+    100% {
+        height: 80%;
+        opacity: 1;
+    }
+}
+@keyframes jsscore {
+    0% {
+        height: 0%;
+    }
+    10% {}
+    20% {}
+    30% {}
+    40% {}
+    50% {}
+    60% {}
+    70% {}
+    80% {}
+    90% {}
+    100% {
+        height: 90%;
+        opacity: 1;
+    }
+}
+@keyframes jqscore {
+    0% {
+        height: 0%;
+    }
+    10% {}
+    20% {}
+    30% {}
+    40% {}
+    50% {}
+    60% {}
+    70% {}
+    80% {}
+    90% {}
+    100% {
+        height: 90%;
+        opacity: 1;
+    }
+}
+@keyframes reactscore {
+    0% {
+        height: 0%;
+    }
+    10% {}
+    20% {}
+    30% {}
+    40% {}
+    50% {}
+    60% {}
+    70% {}
+    80% {}
+    90% {}
+    100% {
+        height: 90%;
+        opacity: 1;
+    }
+}

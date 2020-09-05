@@ -577,45 +577,75 @@ body, html {
 
 
 
-.article3 .skills .skills-list .skills-back {
-    background: pink;
-    height: 700px;
-    transform: translateY(49px);
-    position: relative;
-}
 
 
-.article3 .skills .skills-list .skills-back .skills-box {
-    width: 100%; height: 100%;
-    position: relative;
-    border: 1px solid black;
-}
-.article3 .skills .skills-list .skills-back .skills-box .skills-inner {
-    width: 100%; height: 100%;
-    position: absolute; bottom: 0px;
+
+
+
+
+.article3 .skills .skills-list .skills-box {
+    width: 100%; height: 350px;
+    position: absolute; bottom: 30%;
+    /* left: 50%; transform: translateX(-50%); */
     text-align: center;
 }
-.article3 .skills .skills-list .skills-back .skills-box .skills-inner > div {
-    border: 1px solid black;
+
+.article3 .skills .skills-list .skills-box > div {
     display: inline-block;
-    padding: 0px 10px 50px;
+    /* border: 1px solid black; */
+    height: 100%; width: 200px;
+    margin: 0px 10px;
+}
+.article3 .skills .skills-list .skills-box .score {
+    /* border: 1px solid black; */
     height: 100%;
-    /* position: absolute; bottom: 50px; */
+    position: relative;
+    background: url(../images/whale.png) no-repeat;
+    background-position: bottom;
 }
 
-
-
-.article3 .skills .skills-list .skills-back .skills-box .score {
-    border: 1px solid black;
-    height: 100%;
-    
-}
-.article3 .skills .skills-list .skills-back .skills-box .score span {
-    /* position: relative; top: 570px; */
+.article3 .skills .skills-list .skills-box .score .myscore {
+    height: 0%; width: 3px;
     display: block;
+    opacity: 0;
+    position: absolute; bottom: 0px; left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px; font-family: 'TmoneyRoundWindExtraBold';
 }
-.article3 .skills .skills-list .skills-back .skills-box .skills-inner > div p {
-    font-size: 20px; font-family: 'TmoneyRoundWindExtraBold';
+.article3 .skills .skills-list .skills-box .score .myscore::before {
+    content: "∩";
+    font-weight: 900;
+    position: absolute; top: -20px; right: -1px;
+    color: blue;
+    /* background: blue;
+    width: 20px; height: 20px;
+    border-radius: 50%; */
+}
+.article3 .skills .skills-list .skills-box .score .myscore::after {
+    content: "∩";
+    position: absolute; top: -20px; left: -1px;
+    color: blue;
+    
+    /* background: blue;
+    width: 20px; height: 20px;
+    border-radius: 50%; */
+}
+
+.article3 .skills .skills-list .skills-box .score .myscore p {
+    position: absolute; bottom: 110%; left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+.article3 .skills .skills-list .skills-box span {
+    font-size: 25px; font-family: 'TmoneyRoundWindExtraBold';
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    /* border: 1px solid black; */
 }
 
 
@@ -623,18 +653,26 @@ body, html {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.article3 .skills .skills-list .skills-box .html .myscore { 
+    background: blue; 
+    animation: htmlscore 1s both 0s;
+}
+.article3 .skills .skills-list .skills-box .css .myscore {
+    background: blue;  
+    animation: cssscore 1s both 0.5s;
+}    
+.article3 .skills .skills-list .skills-box .js .myscore {
+    background: blue;  
+    animation: jsscore 1s both 1s;
+}
+.article3 .skills .skills-list .skills-box .jq .myscore {
+    background:blue; 
+    animation: jqscore 1s both 1.5s;
+}
+.article3 .skills .skills-list .skills-box .react .myscore {
+    background: blue; 
+    animation: reactscore 1s both 2s;
+}
 
 
 
