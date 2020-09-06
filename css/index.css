@@ -443,9 +443,6 @@ body, html {
     font-size: 60px; font-family: 'TmoneyRoundWindExtraBold';
     padding: 30px 0px;
 }
-  
-
-
 
 
 
@@ -462,6 +459,36 @@ body, html {
     padding-bottom: 5px;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -516,7 +543,7 @@ body, html {
 /* .article3 .seaweed2 img {
     vertical-align: bottom;
 } */
-/* skill 미역 텍스트---------------------------------------------------------------------- */
+/* skills 미역 텍스트---------------------------------------------------------------------- */
 .article3 .seaweed1 .click {
     display: block;
     text-align: center;
@@ -531,7 +558,7 @@ body, html {
 .article3 .seaweed1 .click {
     font-size: 20px;
 }
-/* contact 미역 텍스트---------------------------------------------------------------------- */
+/* skills 미역 텍스트---------------------------------------------------------------------- */
 .article3 .seaweed2 .click {
     display: block;
     text-align: center;
@@ -549,12 +576,12 @@ body, html {
 
 
 
-/* contact 페이지---------------------------------------------------------------------------- */
+/* skills 페이지---------------------------------------------------------------------------- */
 .article3 .skills {
     z-index: 999999;
     position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
     background: rgba(0,0,0,0.5);
-    /* display: none; */
+    display: none;
 }
 /* 클릭 이벤트 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 .article3 .skills.on {
@@ -571,25 +598,14 @@ body, html {
     font-size: 60px; font-family: 'TmoneyRoundWindExtraBold';
     padding: 30px 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+/* skills 구역-------------------------------------------------------------------------- */
 .article3 .skills .skills-list .skills-box {
     width: 100%; height: 350px;
     position: absolute; bottom: 30%;
     /* left: 50%; transform: translateX(-50%); */
     text-align: center;
 }
-
+/* 각각의 스킬구역 박스 */
 .article3 .skills .skills-list .skills-box > div {
     display: inline-block;
     /* border: 1px solid black; */
@@ -600,46 +616,81 @@ body, html {
     /* border: 1px solid black; */
     height: 100%;
     position: relative;
-    background: url(../images/whale.png) no-repeat;
+    background: url(../images/whale1.png) no-repeat;
     background-position: bottom;
 }
-
+/* 분수 */
 .article3 .skills .skills-list .skills-box .score .myscore {
-    height: 0%; width: 3px;
+    height: 0%; width: 4px;
     display: block;
     opacity: 0;
-    position: absolute; bottom: 0px; left: 50%;
+    background: rgb(35,31,32);
+    position: absolute; bottom: 5px; left: 50%;
     transform: translateX(-50%);
     font-size: 25px; font-family: 'TmoneyRoundWindExtraBold';
 }
+/* 분수 애니메이션------------------------------------------------------------------------- */
+.article3 .skills .skills-list .skills-box .html .myscore { 
+    animation: htmlscore 1s both 0s;
+}
+.article3 .skills .skills-list .skills-box .html .myscore p { 
+    animation: score 1s infinite 1s linear;
+}
+.article3 .skills .skills-list .skills-box .css .myscore {
+    animation: cssscore 1s both 0.5s;
+}    
+.article3 .skills .skills-list .skills-box .css .myscore p {
+    animation: score 1s infinite 1.5s linear;
+}    
+.article3 .skills .skills-list .skills-box .js .myscore {
+    animation: jsscore 1s both 1s;
+}
+.article3 .skills .skills-list .skills-box .js .myscore p {
+    animation: score 1s infinite 2s linear;
+}    
+.article3 .skills .skills-list .skills-box .jq .myscore {
+    animation: jqscore 1s both 1.5s;
+}
+.article3 .skills .skills-list .skills-box .jq .myscore p {
+    animation: score 1s infinite 2.5s linear;
+}    
+.article3 .skills .skills-list .skills-box .react .myscore {
+    animation: reactscore 1s both 2s;
+}
+.article3 .skills .skills-list .skills-box .react .myscore p {
+    animation: score 1s infinite 3s linear;
+}    
+/* 분수이미지 보류 */
+/* .article3 .skills .skills-list .skills-box .score .myscore img {
+    position: fixed; bottom: 100%; left: 50%;
+    transform: translateX(-50%);
+} */
+/* 분수 끝에 갈라지는 표현 */
 .article3 .skills .skills-list .skills-box .score .myscore::before {
     content: "∩";
     font-weight: 900;
-    position: absolute; top: -20px; right: -1px;
-    color: blue;
+    position: absolute; top: -20px; right: 0px;
+    color: rgb(35,31,32);
+
     /* background: blue;
     width: 20px; height: 20px;
     border-radius: 50%; */
 }
 .article3 .skills .skills-list .skills-box .score .myscore::after {
     content: "∩";
-    position: absolute; top: -20px; left: -1px;
-    color: blue;
+    position: absolute; top: -20px; left: 0px;
+    color: rgb(35,31,32);
     
     /* background: blue;
     width: 20px; height: 20px;
     border-radius: 50%; */
 }
-
+/* 점수 % */
 .article3 .skills .skills-list .skills-box .score .myscore p {
-    position: absolute; bottom: 110%; left: 50%;
+    position: absolute; bottom: 105%; left: 50%;
     transform: translateX(-50%);
 }
-
-
-
-
-
+/* 스킬 텍스트 */
 .article3 .skills .skills-list .skills-box span {
     font-size: 25px; font-family: 'TmoneyRoundWindExtraBold';
     display: block;
@@ -647,80 +698,6 @@ body, html {
     padding-top: 10px;
     /* border: 1px solid black; */
 }
-
-
-
-
-
-
-.article3 .skills .skills-list .skills-box .html .myscore { 
-    background: blue; 
-    animation: htmlscore 1s both 0s;
-}
-.article3 .skills .skills-list .skills-box .css .myscore {
-    background: blue;  
-    animation: cssscore 1s both 0.5s;
-}    
-.article3 .skills .skills-list .skills-box .js .myscore {
-    background: blue;  
-    animation: jsscore 1s both 1s;
-}
-.article3 .skills .skills-list .skills-box .jq .myscore {
-    background:blue; 
-    animation: jqscore 1s both 1.5s;
-}
-.article3 .skills .skills-list .skills-box .react .myscore {
-    background: blue; 
-    animation: reactscore 1s both 2s;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* skills 나가기 버튼--------------------------------------------------------------------- */
 .article3 .skills .skills-list .close {
     position: absolute; top: 50px; right: 5%;
@@ -732,10 +709,6 @@ body, html {
     padding-bottom: 5px;
     cursor: pointer;
 }
-
-
-
-
 
 
 /* contact 페이지---------------------------------------------------------------------------- */
@@ -879,63 +852,6 @@ body, html {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* recycle 이미지 깔끔한걸로 구해야함 */
-
 /* 게임오버 페이지-------------------------------------------------------------------------- */
 .article4 {
     height: 100%;
@@ -962,15 +878,15 @@ body, html {
     padding: 0px 50px;
 }
 /* 죽은 개복치 이미지 */
-.article4 .return .fish {
+/* .article4 .return .fish {
     animation: die-fish 30s both linear;
     z-index: 2;
-}
+} */
 /* 재도전 버튼 구역 */
 .article4 .return .retu div {
     position: relative;
-    border: 5px solid black;
-    width: 250px; height: 250px;
+    /* border: 5px solid black; */
+    /* width: 250px; height: 250px; */
     line-height: 250px;
     margin-right: 10px;
     /* h3의 letter의 가운데 정렬을 위해서 오른쪽에 h3크기의 0.5em(10px)을 넣어준다. */
@@ -982,10 +898,11 @@ body, html {
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     width: 50px; height: auto;
+    animation: die-fish 10s both linear;
 }
 /* 재도전 텍스트 */
 .article4 .return .retu h3 {
-    font-size: 30px; font-family: 'TmoneyRoundWindExtraBold';
+    font-size: 40px; font-family: 'TmoneyRoundWindExtraBold';
     padding-top: 20px;
     letter-spacing: 0.5em;
     /* 가운데 정렬이 안되서 위에 div 오른쪽에 h3의 0.5em(10px)을 추가해서 가운데 정렬 */

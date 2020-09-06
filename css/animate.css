@@ -306,7 +306,8 @@
 /* 죽은 물고기 */
 @keyframes die-fish {
     0% {
-        transform: translateY(0%);
+        position: absolute; top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
     }
     10% {}
     20% {}
@@ -318,7 +319,10 @@
     80% {}
     90% {}
     100% {
-        transform: translateY(-500%);
+        position: absolute; top: 50%; left: 50%;
+        transform: translate(200%, -600%);
+        /* transform: translateY(-500%); */
+        width: 115px; height: auto;
     }
 }
 /* 컨택트 전송버튼 클릭시 움직이는 생선뼈 */
@@ -372,6 +376,7 @@
         opacity: 1;
     }
 }
+/* css */
 @keyframes cssscore {
     0% {
         height: 0%;
@@ -386,10 +391,11 @@
     80% {}
     90% {}
     100% {
-        height: 80%;
+        height: 85%;
         opacity: 1;
     }
 }
+/* javascript */
 @keyframes jsscore {
     0% {
         height: 0%;
@@ -408,6 +414,7 @@
         opacity: 1;
     }
 }
+/* jquery */
 @keyframes jqscore {
     0% {
         height: 0%;
@@ -422,10 +429,11 @@
     80% {}
     90% {}
     100% {
-        height: 90%;
+        height: 70%;
         opacity: 1;
     }
 }
+/* react */
 @keyframes reactscore {
     0% {
         height: 0%;
@@ -440,7 +448,32 @@
     80% {}
     90% {}
     100% {
-        height: 90%;
+        height: 80%;
         opacity: 1;
+    }
+}
+/* myscore 퍼센트 수치 */
+@keyframes score {
+    0% {
+        position: absolute; bottom: 105%; left: 50%;
+        transform: translateX(-50%);
+    }
+    10% {}
+    20% {}
+    30% {
+        position: absolute; bottom: 110%; left: 50%;
+        transform: translateX(-50%);
+    }
+    40% {}
+    50% {}
+    60% {}
+    70% {}
+    80% {}
+    90% {
+        
+    }
+    100% {
+        position: absolute; bottom: 105%; left: 50%;
+        transform: translateX(-50%);
     }
 }

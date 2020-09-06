@@ -22,6 +22,17 @@
 
 
 
+    // 세번째 미역 클릭하면 contact 오픈 이벤트------------------------------------------
+    $('.article3 .seaweed1 > a').on('click', function(){
+        $('.skills').addClass('on')
+    })
+    // skills 페이지 나가기 버튼
+    $('.article3 .close').on('click', function(){
+        $('.skills').removeClass('on')
+    })
+
+
+
 
     // 네번째 미역 클릭하면 contact 오픈 이벤트------------------------------------------
     $('.article3 .seaweed2 > a').on('click', function(){
