@@ -304,7 +304,7 @@
     }
 }
 /* 죽은 물고기 */
-@keyframes die-fish {
+/* @keyframes die-fish {
     0% {
         position: absolute; top: 50%; left: 50%;
         transform: translate(-50%, -50%);
@@ -321,10 +321,9 @@
     100% {
         position: absolute; top: 50%; left: 50%;
         transform: translate(200%, -600%);
-        /* transform: translateY(-500%); */
         width: 115px; height: auto;
     }
-}
+} */
 /* 컨택트 전송버튼 클릭시 움직이는 생선뼈 */
 @keyframes contact {
     0% {}
