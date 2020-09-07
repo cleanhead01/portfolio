@@ -303,6 +303,35 @@
         width: auto;
     }
 }
+/* 포트폴리오 메뉴 굴러오기 */
+@keyframes port {
+    0% {
+        transform: translateX(-500%);
+    }
+    10% {}
+    20% {}
+    30% {}
+    40% {}
+    50% {}
+    60% {}
+    70% {}
+    80% {}
+    90% {}
+    100% {
+        transform: translateX(0%) rotate(2turn);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* 죽은 물고기 */
 /* @keyframes die-fish {
     0% {

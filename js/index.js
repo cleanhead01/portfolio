@@ -22,6 +22,32 @@
 
 
 
+
+
+    
+    
+    // 두번째 미역 클릭하면 contact 오픈 이벤트------------------------------------------
+    $('.article2 .seaweed1 > a').on('click', function(){
+        $('.portfolio').addClass('on')
+    })
+    // portfolio 페이지 나가기 버튼
+    $('.article2 .close').on('click', function(){
+        $('.portfolio').removeClass('on')
+    })
+    // portfolio 페이지 메뉴 클릭 이벤트
+    $('.portfolio .title li').on('click', function(){
+        var num = $(this).index()
+        $(this).addClass('on')
+        .siblings().removeClass('on')
+        $('.portfolio .content ul').eq(num)
+        .addClass('on')
+        .siblings().removeClass('on')
+        
+    })
+
+
+
+
     // 세번째 미역 클릭하면 contact 오픈 이벤트------------------------------------------
     $('.article3 .seaweed1 > a').on('click', function(){
         $('.skills').addClass('on')
@@ -42,6 +68,25 @@
     $('.article3 .close').on('click', function(){
         $('.contact').removeClass('on')
     })
+    // 이메일 도메인
+    $('#mail-choice').on('change', function(){
+        $('#mail-choice option:selected').each(function(){
+            if ($(this).val() === 'choice') {
+                $('#domain').val('')
+                $('#domain').attr('disabled', true)
+            } else if ($(this).val() === 'self') {
+                $('#domain').val('')
+                $('#domain').attr('disabled', false)
+            } else {
+                $('#domain').val( $(this).val() )
+                $('#domain').attr('disabled', true)
+            }
+        })
+    })
+
+
+
+
     
 
 
