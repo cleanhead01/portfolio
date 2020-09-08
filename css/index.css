@@ -276,7 +276,7 @@ body, html {
 }
 .article1 .about-me .about-list .career .month > span {
     font-size: 16px;
-    color: #8f784b;
+    /* color: #8f784b; */
     animation: month 2s infinite ease-out;
     position: relative; 
     /* before, after보다 앞으로 나올 수 있게 relative */
