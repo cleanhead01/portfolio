@@ -239,7 +239,7 @@ body, html {
 }
 .article1 .about-me .about-list .career > ul:nth-child(1)::after {
     content: "";
-    position: absolute; top: 16px; right: 32px;
+    position: absolute; top: 16px; right: 24px;
     height: 120px; width: 2px;
     background: black;
 }
@@ -875,6 +875,9 @@ body, html {
     resize: none;
     width: 570px; height: 100px;
     padding: 10px 0px 0px 10px;
+}
+.article3 .inquiry-form .memo textarea::placeholder {
+    font-size: 16px; font-weight: bold;
 }
 /* 용궁으로 전송버튼----------------------------------------------------------------------- */
 .article3 .inquiry-form .submit {
