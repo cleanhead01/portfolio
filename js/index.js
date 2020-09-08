@@ -1,10 +1,33 @@
 (function($){
 
+    // 다른 페이지에서 새로고침 하면 0px 페이지로 0.8초에 걸쳐 이동하기
+    $('html, body').animate({   
+        scrollLeft: '0'
+    }, 800)
+
 
     // 로딩페이지-----------------------------------------
     $(window).load(function(){
         $('.waiting-box').delay(3800).fadeOut()
     })
+
+    // 튜토리얼의 게임시작 버튼을 누르면 게임시작페이지로 이동
+    $('#header .start').on('click', function(){
+        $('body, html').stop().animate({
+            scrollLeft: '1920px'
+        }, 0)
+        $('.article1 .img-box img:nth-child(2)').addClass('on')
+    })
+
+
+    // 가로스크롤 휠 이벤트
+    
+
+
+
+
+
+
     
     // 첫번째 미역 클릭하면 about me 오픈이벤트-----------------------------------------
     $('.article1 .seaweed1 > a').on('click', function(){
