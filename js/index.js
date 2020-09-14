@@ -1,9 +1,9 @@
 (function($){
 
     // 다른 페이지에서 새로고침 하면 0px 페이지로 0.8초에 걸쳐 이동하기
-    $('html, body').animate({   
-        scrollLeft: '0'
-    }, 800)
+    // $('html, body').animate({   
+    //     scrollLeft: '0'
+    // }, 800)
 
 
     // 로딩페이지-----------------------------------------
@@ -22,6 +22,18 @@
 
     // 가로스크롤 휠 이벤트
     
+    $('html, body').on('mousewheel',function(e){
+
+		var wheelDelta = e.originalEvent.wheelDelta;
+
+		if(wheelDelta < 0){
+            $(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
+            
+		} else {
+			$(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
+
+		}
+    });
 
 
 
@@ -29,6 +41,23 @@
 
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // 첫번째 미역 클릭하면 about me 오픈이벤트-----------------------------------------
     $('.article1 .seaweed1 > a').on('click', function(){
         $('.about-me').addClass('on')

@@ -330,10 +330,6 @@
 
 
 
-
-
-
-
 /* 죽은 물고기 */
 /* @keyframes die-fish {
     0% {
@@ -505,5 +501,63 @@
     100% {
         position: absolute; bottom: 105%; left: 50%;
         transform: translateX(-50%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fish1 {
+    0% {
+        position: absolute; bottom: 120px; left: 100px;
+    }
+    10% {
+        position: absolute; bottom: 120px; left: 600px;
+        /* transform: skew(0deg); */
+    }
+    20% {
+        /* transform: skew(45deg, -45deg); */
+        position: absolute; bottom: 170px; left: 800px;
+        
+    }
+    30% {
+        /* transform: skew(-45deg, 45deg); */
+        position: absolute; bottom: 120px; left: 900px;
+        
+    }
+    40% {
+        /* transform: skew(0deg, 0deg); */
+        position: absolute; bottom: 120px; left: 1100px;
+    }
+    50% {
+        position: absolute; bottom: 300px; left: 1300px;
+    }
+    60% {
+        position: absolute; bottom: 300px; left: 1400px;
+    }
+    70% {
+        position: absolute; bottom: 120px; left: 1600px;
+    }
+    80% {
+        position: absolute; bottom: 120px; left: 1800px;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        position: absolute; bottom: 120px; left: 1900px;
+        opacity: 0;
     }
 }

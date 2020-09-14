@@ -26,32 +26,6 @@ body, html {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 로딩페이지--------------------------------------------------------------------------------- */
 .waiting-box {
     width: 100%; height: 100%;
@@ -164,8 +138,9 @@ body, html {
 }
 /* 개복치 */
 .article1 .img-box img:nth-child(2) {
-    position: fixed; bottom: 120px; left: 100px;
-    display: none;
+    position: absolute; bottom: 120px; left: 100px;
+    animation: fish1 10s both linear;
+    /* display: none; */
 }
 .article1 .img-box img:nth-child(2).on {
     display: block;
