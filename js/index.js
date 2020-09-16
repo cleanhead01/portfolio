@@ -21,27 +21,37 @@
 
 
     // 가로스크롤 휠 이벤트
-    
-    $('html, body').on('mousewheel',function(e){
 
-		var wheelDelta = e.originalEvent.wheelDelta;
-
-		if(wheelDelta < 0){
-            $(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
-            
-		} else {
-			$(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
-
-		}
-    });
+    // 조금씩 이동하는 가로스크롤 이벤트    
+    // $('html, body').on('mousewheel',function(e){
+	// 	var wheelDelta = e.originalEvent.wheelDelta;
+	// 	if(wheelDelta < 0){
+    //         $(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
+	// 	} else {
+	// 		$(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
+	// 	}
+    // });
 
 
 
-
-
-
-    
-
+    // 섹션별로 이동하는 가로스크롤 휠 이벤트
+    var secIndex;
+    $('.float').on('mousewheel', function(e, wh){
+        if (wh > 0) {
+            secIndex = $(this).prev().index()
+            if (secIndex < 0) {
+                secindex = 0
+            }
+        } else if (wh < 0) {
+            secIndex = $(this).next().index()
+            if (secIndex < 0) {
+                secIndex = 5
+            }
+        }
+        $('html, body').stop().animate({
+            scrollLeft : secIndex * $(window).width()
+        }, 800)
+    })
 
 
 

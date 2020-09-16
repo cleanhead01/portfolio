@@ -139,7 +139,7 @@ body, html {
 /* 개복치 */
 .article1 .img-box img:nth-child(2) {
     position: absolute; bottom: 120px; left: 100px;
-    animation: fish1 10s both linear;
+    animation: fish1 5s both linear;
     /* display: none; */
 }
 .article1 .img-box img:nth-child(2).on {
