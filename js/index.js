@@ -60,14 +60,6 @@
 
 
 
-
-
-
-
-
-
-
-
     // 첫번째 미역 클릭하면 about me 오픈이벤트-----------------------------------------
     $('.article1 .seaweed1 > a').on('click', function(){
         $('.about-me').addClass('on')
