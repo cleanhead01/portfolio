@@ -50,7 +50,7 @@
         }
         $('html, body').stop().animate({
             scrollLeft : secIndex * $(window).width()
-        }, 800)
+        }, 1000)
     })
 
 

@@ -15,6 +15,7 @@
 
 body, html {
     height: 100%; width: 100%;
+    overflow-x: hidden;
 }
 .magic {
     height: 100%; width: 9600px;
@@ -62,7 +63,7 @@ body, html {
 }
 /* 튜토리얼 텍스트---------------------------------------------------------------------------- */
 #header {
-    /* position: relative; */
+    position: relative;
     height: 100%;
 }
 .tuto-box {
