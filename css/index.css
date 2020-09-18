@@ -18,11 +18,11 @@ body, html {
     overflow-x: hidden;
 }
 .magic {
-    height: 100%; width: 9600px;
+    height: 100%; width: 500%;
     overflow: hidden;
 }
 .float {
-    height: 100%; width: 1920px;
+    height: 100%; width: 20%;
     float: left;
 }
 
