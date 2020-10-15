@@ -158,11 +158,11 @@ body, html {
 /* 모래바닥 */
 .article1 .img-box img:nth-child(5) {
     position: absolute; bottom: 0px;
-    width: 100%;
+    width: 100%; height: 68px;
 }
 /* 산호초1 */
 .article1 .img-box img:nth-child(6) {
-    position: absolute; bottom: 99px; left: 40%;
+    position: absolute; bottom: 68px; left: 40%;
 }
 /* 치어떼 */
 .article1 .img-box img:nth-child(7) {
@@ -171,7 +171,7 @@ body, html {
 
 /* about me 미역----------------------------------------------------------------------------- */
 .article1 .seaweed1 {
-    position: absolute; bottom: 57px; right: 25%;
+    position: absolute; bottom: 26px; right: 25%;
     /* border: 1px solid black; */
 }
 .article1 .seaweed1 img {
@@ -399,7 +399,7 @@ body, html {
 /* 모래바닥 */
 .article2 .img-box img:nth-child(4) {
     position: absolute; bottom: 0px;
-    width: 100%;
+    width: 100%; height: 68px;
 }
 /* 산호초1 */
 .article2 .img-box img:nth-child(5) {
@@ -589,7 +589,7 @@ body, html {
 /* 모래바닥 */
 .article3 .img-box img:nth-child(4) {
     position: absolute; bottom: 0px;
-    width: 100%;
+    width: 100%; height: 68px;
 }
 /* 산호초1 */
 .article3 .img-box img:nth-child(5) {
