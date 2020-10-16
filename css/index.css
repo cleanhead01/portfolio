@@ -75,6 +75,7 @@ body, html {
 .tuto-box .img-box {
     position: absolute; bottom: 55%; left: 45%;
     transform: translateX(-45%);
+    width: 300px; height: 151px;
     /* border: 1px solid black; */
     /* height: 300px; */
 }
@@ -95,6 +96,7 @@ body, html {
     position: absolute; top: 50%; left: 45%;
     transform: translateX(-45%);
     /* border: 1px solid black; */
+    /* width: 40%; */ min-width: 300px;
 }
 .tuto-box .tuto-txt h2 {
     font-size: 40px; font-family: 'TmoneyRoundWindExtraBold';
@@ -148,8 +150,9 @@ body, html {
 }
 /* 종이배 */
 .article1 .img-box img:nth-child(3) {
-    position: absolute; top: 80px; left: 70%;
+    position: absolute; bottom: 81%; left: 70%;
     z-index: 8;
+    max-width: 139px; width: 15%;
 }
 /* 갈매기 */
 .article1 .img-box img:nth-child(4) {
@@ -162,7 +165,7 @@ body, html {
 }
 /* 산호초1 */
 .article1 .img-box img:nth-child(6) {
-    position: absolute; bottom: 68px; left: 40%;
+    position: absolute; bottom: 68px; left: 25%;
 }
 /* 치어떼 */
 .article1 .img-box img:nth-child(7) {
