@@ -14,8 +14,8 @@
     // 튜토리얼의 게임시작 버튼을 누르면 게임시작페이지로 이동
     $('#header .start').on('click', function(){
         $('body, html').stop().animate({
-            scrollLeft: '1920px'
-        }, 0)
+            scrollLeft: $(window).width()
+        }, 500)
         $('.article1 .img-box img:nth-child(2)').addClass('on')
     })
 
@@ -33,6 +33,7 @@
     // });
 
 
+    
 
     // 섹션별로 이동하는 가로스크롤 휠 이벤트
     var secIndex;

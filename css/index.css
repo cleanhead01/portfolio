@@ -150,50 +150,56 @@ body, html {
 }
 /* 종이배 */
 .article1 .img-box img:nth-child(3) {
-    position: absolute; bottom: 81%; left: 70%;
+    position: absolute; top: 80px; left: 70%;
     z-index: 8;
     max-width: 139px; width: 15%;
 }
 /* 갈매기 */
-.article1 .img-box img:nth-child(4) {
+/* .article1 .img-box img:nth-child(4) {
     position: absolute; top: 80px; left: 75%;
-}
+    max-width: 30px; width: 15%;
+} */
 /* 모래바닥 */
-.article1 .img-box img:nth-child(5) {
+.article1 .img-box img:nth-child(4) {
     position: absolute; bottom: 0px;
     width: 100%; height: 68px;
 }
 /* 산호초1 */
-.article1 .img-box img:nth-child(6) {
+.article1 .img-box img:nth-child(5) {
     position: absolute; bottom: 68px; left: 25%;
+    max-width: 80px; width: 15%;
 }
 /* 치어떼 */
-.article1 .img-box img:nth-child(7) {
+.article1 .img-box img:nth-child(6) {
     position: absolute; top: 30%; left: 30%;
+    max-width: 150px; 
+    width: 20%;
 }
 
 /* about me 미역----------------------------------------------------------------------------- */
 .article1 .seaweed1 {
-    position: absolute; bottom: 26px; right: 25%;
+    position: absolute; bottom: 68px; right: 25%;
     /* border: 1px solid black; */
+    max-width: 91px;
+    width: 15%;
 }
 .article1 .seaweed1 img {
     vertical-align: bottom;
+    width: 44%;
 }
 /* about me 미역 텍스트---------------------------------------------------------------------- */
 .article1 .seaweed1 .click {
     display: block;
     text-align: center;
-    padding-top: 15px;
-    font-weight: bold;
+    padding-top: 5px;
+    font-weight: bold; font-size: 20px;
+    position: absolute; top: 100%;
+    width: 100%;
 }
 .article1 .seaweed1 .click i {
     animation: click 1s infinite;
     transform: translateY(20%);
     color: blue;
-}
-.article1 .seaweed1 .click {
-    font-size: 20px;
 }
 /* about me 페이지---------------------------------------------------------------------------- */
 .article1 .about-me {
@@ -394,42 +400,51 @@ body, html {
     position: absolute; top: 80px; left: 70%;
     z-index: 8;
     /* 파도보다 뒤로 */
+    max-width: 139px; width: 15%;
 }
 /* 갈매기 */
-.article2 .img-box img:nth-child(3) {
+/* .article2 .img-box img:nth-child(3) {
     position: absolute; top: 80px; left: 75%;
-}
+} */
 /* 모래바닥 */
-.article2 .img-box img:nth-child(4) {
+.article2 .img-box img:nth-child(3) {
     position: absolute; bottom: 0px;
     width: 100%; height: 68px;
 }
 /* 산호초1 */
-.article2 .img-box img:nth-child(5) {
-    position: absolute; bottom: 99px; right: 20%;
+.article2 .img-box img:nth-child(4) {
+    position: absolute; bottom: 68px; right: 10%;
+    max-width: 51px; width: 15%;
 }
 /* 산호초1 */
-.article2 .img-box img:nth-child(6) {
-    position: absolute; bottom: 99px; left: 20%;
+.article2 .img-box img:nth-child(5) {
+    position: absolute; bottom: 68px; left: 15%;
+    max-width: 60px; width: 15%;
 }
 /* 치어떼 */
-.article2 .img-box img:nth-child(7) {
+.article2 .img-box img:nth-child(6) {
     position: absolute; top: 30%; left: 35%;
+    max-width: 150px; 
+    width: 20%;
 }
 /* portfoilo 미역----------------------------------------------------------------------------- */
 .article2 .seaweed1 {
-    position: absolute; bottom: 57px; right: 40%;
+    position: absolute; bottom: 68px; right: 40%;
     /* border: 1px solid black; */
+    max-width: 80px; width: 15%;
 }
 .article2 .seaweed1 img {
     vertical-align: bottom;
+    width: 100%;
 }
 /* about me 미역 텍스트---------------------------------------------------------------------- */
 .article2 .seaweed1 .click {
     display: block;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 5px;
     font-weight: bold;
+    position: absolute; top: 100%;
+    width: 100%;
 }
 .article2 .seaweed1 .click i {
     animation: click 1s infinite;
@@ -584,35 +599,44 @@ body, html {
     position: absolute; top: 80px; left: 70%;
     z-index: 8;
     /* 파도보다 뒤로 */
+    max-width: 139px; width: 15%;
 }
 /* 갈매기 */
-.article3 .img-box img:nth-child(3) {
+/* .article3 .img-box img:nth-child(3) {
     position: absolute; top: 80px; left: 75%;
-}
+} */
 /* 모래바닥 */
-.article3 .img-box img:nth-child(4) {
+.article3 .img-box img:nth-child(3) {
     position: absolute; bottom: 0px;
     width: 100%; height: 68px;
 }
 /* 산호초1 */
-.article3 .img-box img:nth-child(5) {
-    position: absolute; bottom: 99px; right: 50%;
+.article3 .img-box img:nth-child(4) {
+    position: absolute; bottom: 68px; right: 40%;
+    max-width: 60px; width: 15%;
 }
 /* 치어떼 */
-.article3 .img-box img:nth-child(6) {
+.article3 .img-box img:nth-child(5) {
     position: absolute; top: 30%; left: 35%;
+    max-width: 150px; 
+    width: 20%;
 }
 /* skill 미역----------------------------------------------------------------------------- */
 .article3 .seaweed1 {
-    position: absolute; bottom: 57px; left: 21%;
+    position: absolute; bottom: 68px; left: 10%;
     /* border: 1px solid black; */
+    max-width: 91px; width: 15%;
 }
 .article3 .seaweed1 img {
     vertical-align: bottom;
+    width: 43%;
 }
 /* 컨택트 미역----------------------------------------------------------------------------- */
 .article3 .seaweed2 {
-    position: absolute; bottom: 57px; right: 20%;
+    position: absolute; bottom: 68px; right: 10%;
+    max-width: 70px;
+    width: 15%;
+    text-align: center;
 }
 /* .article3 .seaweed2 img {
     vertical-align: bottom;
@@ -621,8 +645,10 @@ body, html {
 .article3 .seaweed1 .click {
     display: block;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 5px;
     font-weight: bold;
+    position: absolute; top: 100%;
+    width: 100%;
 }
 .article3 .seaweed1 .click i {
     animation: click 1s infinite;
@@ -632,12 +658,14 @@ body, html {
 .article3 .seaweed1 .click {
     font-size: 20px;
 }
-/* skills 미역 텍스트---------------------------------------------------------------------- */
+/* 컨택트 미역 텍스트---------------------------------------------------------------------- */
 .article3 .seaweed2 .click {
     display: block;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 5px;
     font-weight: bold;
+    position: absolute; top: 100%;
+    width: 100%;
 }
 .article3 .seaweed2 .click i {
     animation: click 1s infinite;
@@ -941,14 +969,17 @@ body, html {
     transform: translateX(-50%);
     font-size: 80px;
     letter-spacing: 0.5em;
-    z-index: 1;
 }
+/* .article4 h2 span {
+    display: block;
+} */
 /* 재도전 구역------------------------------------------------------------------------------- */
 .article4 .return {
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    padding-top: 100px;
+    padding-top: 0px;
+    /* background: red; */
 }
 .article4 .return > div {
     display: inline-block;
@@ -970,13 +1001,14 @@ body, html {
     /* h3의 letter의 가운데 정렬을 위해서 오른쪽에 h3크기의 0.5em(10px)을 넣어준다. */
 }
 .article4 .return .retu img:nth-child(1) {
-    animation: turn 3s infinite linear;
+    /* animation: turn 3s infinite linear; */
+    min-width: 180px;
 }
 .article4 .return .retu img:nth-child(2) {
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     width: 50px; height: auto;
-    animation: die-fish 10s both linear;
+    /* animation: die-fish 10s both linear; */
 }
 /* 재도전 텍스트 */
 .article4 .return .retu h3 {

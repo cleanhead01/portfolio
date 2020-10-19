@@ -1,1 +1,28 @@
 @charset "utf-8";
+
+
+
+
+@media screen and (max-width:768px) {
+
+    /* 게임오버 텍스트 */
+    .article4 h2 {
+        position: absolute; top: 10%; left: 50%;
+        transform: translateX(-50%);
+        font-size: 80px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .article4 h2 span {
+        display: block;
+    }
+
+    /* 재도전 텍스트 */
+    .article4 .return .retu h3 {
+        font-size: 40px; font-family: 'TmoneyRoundWindExtraBold';
+        padding-top: 20px;
+        letter-spacing: 0em;
+        /* 가운데 정렬이 안되서 위에 div 오른쪽에 h3의 0.5em(10px)을 추가해서 가운데 정렬 */
+    }
+
+}
