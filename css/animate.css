@@ -221,7 +221,7 @@
 /* 커리어 월별버튼 클릭시 나타나는 선 */
 @keyframes month-be1 {
     0% {
-        height: 0px;
+        height: 0%;
     }
     10% {}
     20% {}

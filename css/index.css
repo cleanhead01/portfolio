@@ -263,7 +263,7 @@ body, html {
 }
 /* 커리어------------------------------------------------------------------------------------- */
 .article1 .about-me .about-list .career {
-    position: absolute; bottom: 10%;
+    position: absolute; bottom: 15%;
     width: 100%;
     padding: 0px 50px;
 }
@@ -272,13 +272,13 @@ body, html {
 }
 .article1 .about-me .about-list .career > ul:nth-child(1)::before {
     content: "";
-    position: absolute; top: 0%; left: 0px;
+    position: absolute; top: 50%; left: 0px;
     height: 2px; width: 100%;
     background: black;
 }
 .article1 .about-me .about-list .career > ul:nth-child(1)::after {
     content: "";
-    position: absolute; top: 0%; right: 0%;
+    position: absolute; top: 50%; right: 0%;
     height: 100%; width: 2px;
     background: black;
 }
@@ -288,43 +288,58 @@ body, html {
 }
 .article1 .about-me .about-list .career > ul:nth-child(2)::before {
     content: "";
-    position: absolute; top: 0%; right: 0%;
+    position: absolute; top: 50%; right: 0%;
+    height: 2px; width: 100%;
+    background: black;
+}
+.article1 .about-me .about-list .career > ul:nth-child(2)::after {
+    content: "";
+    position: absolute; top: 50%; left: 0%;
+    height: 100%; width: 2px;
+    background: black;
+}
+.article1 .about-me .about-list .career > ul:nth-child(3) {
+    position: relative;
+}
+.article1 .about-me .about-list .career > ul:nth-child(3)::before {
+    content: "";
+    position: absolute; top: 50%; left: 0%;
     height: 2px; width: 100%;
     background: black;
 }
 /* 텍스트 */
 .article1 .about-me .about-list .career li {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
+    width: 15%;
+    position: relative;
 }
 .article1 .about-me .about-list .career .year {
     font-size: 18px;
     background: black; color: #fff;
     width: 50px; height: 50px; line-height: 50px;
     border: 1px solid black; border-radius: 50%;
-    position: relative; top: -10px;
-    /* before, after보다 앞으로 나올 수 있게 relative */
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
     text-align: center;
 }
 .article1 .about-me .about-list .career .month {
     text-align: center; 
-    padding: 5px 50px 15px;
+    /* padding: 5px 50px 15px; */
     font-size: 13px;
-    position: relative;
+    /* position: relative; */
 }
 .article1 .about-me .about-list .career .month > span {
     font-size: 16px;
     /* color: #8f784b; */
     animation: month 2s infinite ease-out;
-    position: relative; 
+    /* position: relative;  */
     /* before, after보다 앞으로 나올 수 있게 relative */
     cursor: pointer;
 }
 /* 커리어 서브메뉴----------------------------------------------------------------------------- */
 /* 첫번째 ul메뉴의 서브메뉴 */
 .article1 .about-me .about-list .career > ul:nth-child(1) .month li {
-    position: absolute; bottom: 150%; left: 50%;
+    position: absolute; bottom: 190%; left: 50%;
     transform: translateX(-50%);
     font-size: 20px;
     width: 300px;
@@ -333,7 +348,7 @@ body, html {
 }
 .article1 .about-me .about-list .career > ul:nth-child(1) .month li::before {
     content: "";
-    position: absolute; top: 207%; left: 50%;
+    position: absolute; top: 210%; left: 50%;
     transform: translateX(-50%);
     width: 2px; height: 0px;
     animation: month-be1 0.5s both;
@@ -341,7 +356,7 @@ body, html {
 }
 .article1 .about-me .about-list .career > ul:nth-child(1) .month li::after {
     content: "";
-    position: absolute; top: 207%; left: 50%;
+    position: absolute; top: 210%; left: 50%;
     transform: translateX(-50%);
     width: 5px; height: 5px;
     background: hotpink;
@@ -354,7 +369,7 @@ body, html {
 }
 /* 두번째 ul메뉴의 서브메뉴 */
 .article1 .about-me .about-list .career > ul:nth-child(2) .month li {
-    position: absolute; top: 150%; left: 50%;
+    position: absolute; top: 210%; left: 50%;
     transform: translateX(-50%);
     font-size: 20px;
     width: 300px;
@@ -363,7 +378,7 @@ body, html {
 }
 .article1 .about-me .about-list .career > ul:nth-child(2) .month li::before {
     content: "";
-    position: absolute; bottom: 207%; left: 50%;
+    position: absolute; bottom: 210%; left: 50%;
     transform: translateX(-50%);
     width: 2px; height: 0px;
     background: black;
@@ -371,13 +386,44 @@ body, html {
 }
 .article1 .about-me .about-list .career > ul:nth-child(2) .month li::after {
     content: "";
-    position: absolute; bottom: 207%; left: 50%;
+    position: absolute; bottom: 210%; left: 50%;
     transform: translateX(-50%);
     width: 5px; height: 5px;
     background: hotpink;
     animation: month-af2 0.5s both;
 }
 .article1 .about-me .about-list .career > ul:nth-child(2) .month li span {
+    font-size: 13px;
+    /* display: inline-block; */
+    /* display: none; */
+    animation: month-sp 1s both;
+}
+/* 세번째 ul메뉴의 서브메뉴 */
+.article1 .about-me .about-list .career > ul:nth-child(3) .month li {
+    position: absolute; top: 210%; left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    width: 300px;
+    padding-bottom: 10px;
+    display: none;
+}
+.article1 .about-me .about-list .career > ul:nth-child(3) .month li::before {
+    content: "";
+    position: absolute; bottom: 210%; left: 50%;
+    transform: translateX(-50%);
+    width: 2px; height: 0px;
+    background: black;
+    animation: month-be2 0.5s both;
+}
+.article1 .about-me .about-list .career > ul:nth-child(3) .month li::after {
+    content: "";
+    position: absolute; bottom: 210%; left: 50%;
+    transform: translateX(-50%);
+    width: 5px; height: 5px;
+    background: hotpink;
+    animation: month-af2 0.5s both;
+}
+.article1 .about-me .about-list .career > ul:nth-child(3) .month li span {
     font-size: 13px;
     /* display: inline-block; */
     /* display: none; */
