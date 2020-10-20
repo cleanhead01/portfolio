@@ -133,26 +133,39 @@ body, html {
     position: relative;
     height: 100%;
 }
+.article1 .img-box {
+    height: 100%;
+}
+.article1 .img-box .window-t {
+    height: 25%;
+    /* background: red; */
+    position: relative;
+}
+.article1 .img-box .window-b {
+    height: 75%;
+    /* background: pink; */
+    position: relative;
+}
 /* 파도 */
-.article1 .img-box img:nth-child(1) {
-    position: absolute; top: 150px;
+.article1 .img-box .window-t img:nth-child(1) {
+    position: absolute; bottom: 0px;
     z-index: 9;
     width: 100%;
 }
+/* 종이배 */
+.article1 .img-box .window-t img:nth-child(2) {
+    position: absolute; bottom: 1px; left: 70%;
+    z-index: 8;
+    max-width: 150px; width: 15%;
+}
 /* 개복치 */
-.article1 .img-box img:nth-child(2) {
+.article1 .img-box .window-b img:nth-child(1) {
     position: absolute; bottom: 120px; left: 100px;
     animation: fish1 5s both linear;
     /* display: none; */
 }
-.article1 .img-box img:nth-child(2).on {
+.article1 .img-box .window-b img:nth-child(1).on {
     display: block;
-}
-/* 종이배 */
-.article1 .img-box img:nth-child(3) {
-    position: absolute; top: 80px; left: 70%;
-    z-index: 8;
-    max-width: 139px; width: 15%;
 }
 /* 갈매기 */
 /* .article1 .img-box img:nth-child(4) {
@@ -160,18 +173,18 @@ body, html {
     max-width: 30px; width: 15%;
 } */
 /* 모래바닥 */
-.article1 .img-box img:nth-child(4) {
+.article1 .img-box .window-b img:nth-child(2) {
     position: absolute; bottom: 0px;
     width: 100%; height: 68px;
 }
 /* 산호초1 */
-.article1 .img-box img:nth-child(5) {
+.article1 .img-box .window-b img:nth-child(3) {
     position: absolute; bottom: 68px; left: 25%;
     max-width: 80px; width: 15%;
 }
 /* 치어떼 */
-.article1 .img-box img:nth-child(6) {
-    position: absolute; top: 30%; left: 30%;
+.article1 .img-box .window-b img:nth-child(4) {
+    position: absolute; top: 10%; left: 30%;
     max-width: 150px; 
     width: 20%;
 }
@@ -207,7 +220,7 @@ body, html {
     position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
     background: rgba(0,0,0,0.5);
     /* transition: all 1s; */
-    display: none;
+    /* display: none; */
 }
 /* 클릭 이벤트 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 .article1 .about-me.on {
@@ -220,8 +233,10 @@ body, html {
     position: absolute; top: 0; left: 18%; right: 18%; bottom: 0px;
 }
 .article1 .about-me .about-list .profile {
-    position: absolute; top: 20%; left: 30%;
+    position: absolute; top: 20%; left: 50%;
     transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
 }
 /* 한줄코멘트 */
 .article1 .about-me .about-list .comment {
@@ -248,32 +263,33 @@ body, html {
 }
 /* 커리어------------------------------------------------------------------------------------- */
 .article1 .about-me .about-list .career {
-    position: absolute; bottom: 180px;
-    transform: translateX(5%);
+    position: absolute; bottom: 10%;
+    width: 100%;
+    padding: 0px 50px;
 }
 .article1 .about-me .about-list .career > ul:nth-child(1) {
-    position: relative; left: 5%;
+    position: relative;
 }
 .article1 .about-me .about-list .career > ul:nth-child(1)::before {
     content: "";
-    position: absolute; top: 25%; left: 30px;
-    height: 2px; width: 981px;
+    position: absolute; top: 0%; left: 0px;
+    height: 2px; width: 100%;
     background: black;
 }
 .article1 .about-me .about-list .career > ul:nth-child(1)::after {
     content: "";
-    position: absolute; top: 16px; right: 32px;
-    height: 120px; width: 2px;
+    position: absolute; top: 0%; right: 0%;
+    height: 100%; width: 2px;
     background: black;
 }
 .article1 .about-me .about-list .career > ul:nth-child(2) {
     text-align: right;
-    position: relative; top: 56px; left: 52px;
+    position: relative;
 }
 .article1 .about-me .about-list .career > ul:nth-child(2)::before {
     content: "";
-    position: absolute; top: 16px; right: 30px;
-    height: 2px; width: 600px;
+    position: absolute; top: 0%; right: 0%;
+    height: 2px; width: 100%;
     background: black;
 }
 /* 텍스트 */
@@ -388,16 +404,27 @@ body, html {
     height: 100%;
     position: relative;
 }
+.article2 .img-box {
+    height: 100%;
+}
+.article2 .img-box .window-t {
+    height: 25%;
+    position: relative;
+}
+.article2 .img-box .window-b {
+    height: 75%;
+    position: relative;
+}
 /* 파도 */
-.article2 .img-box img:nth-child(1) {
-    position: absolute; top: 150px;
+.article2 .img-box .window-t img:nth-child(1) {
+    position: absolute; bottom: 0px;
     z-index: 9;
     /* 종이배보다 앞으로 */
     width: 100%;
 }
 /* 종이배 */
-.article2 .img-box img:nth-child(2) {
-    position: absolute; top: 80px; left: 70%;
+.article2 .img-box .window-t img:nth-child(2) {
+    position: absolute; bottom: 1px; left: 70%;
     z-index: 8;
     /* 파도보다 뒤로 */
     max-width: 139px; width: 15%;
@@ -407,27 +434,27 @@ body, html {
     position: absolute; top: 80px; left: 75%;
 } */
 /* 모래바닥 */
-.article2 .img-box img:nth-child(3) {
+.article2 .img-box .window-b img:nth-child(1) {
     position: absolute; bottom: 0px;
     width: 100%; height: 68px;
 }
-/* 산호초1 */
-.article2 .img-box img:nth-child(4) {
+/* 미역2 */
+.article2 .img-box .window-b img:nth-child(2) {
     position: absolute; bottom: 68px; right: 10%;
     max-width: 51px; width: 15%;
 }
-/* 산호초1 */
-.article2 .img-box img:nth-child(5) {
+/* 산호초2 */
+.article2 .img-box .window-b img:nth-child(3) {
     position: absolute; bottom: 68px; left: 15%;
     max-width: 60px; width: 15%;
 }
 /* 치어떼 */
-.article2 .img-box img:nth-child(6) {
-    position: absolute; top: 30%; left: 35%;
+.article2 .img-box .window-b img:nth-child(4) {
+    position: absolute; top: 10%; left: 35%;
     max-width: 150px; 
     width: 20%;
 }
-/* portfoilo 미역----------------------------------------------------------------------------- */
+/* portfoilo 산호초1----------------------------------------------------------------------------- */
 .article2 .seaweed1 {
     position: absolute; bottom: 68px; right: 40%;
     /* border: 1px solid black; */
@@ -587,16 +614,27 @@ body, html {
     height: 100%;
     position: relative;
 }
+.article3 .img-box {
+    height: 100%;
+}
+.article3 .img-box .window-t {
+    height: 25%;
+    position: relative;
+}
+.article3 .img-box .window-b {
+    height: 75%;
+    position: relative;
+}
 /* 파도 */
-.article3 .img-box img:nth-child(1) {
-    position: absolute; top: 150px;
+.article3 .img-box .window-t img:nth-child(1) {
+    position: absolute; bottom: 0px;
     z-index: 9;
     /* 종이배보다 앞으로 */
     width: 100%;
 }
 /* 종이배 */
-.article3 .img-box img:nth-child(2) {
-    position: absolute; top: 80px; left: 70%;
+.article3 .img-box .window-t img:nth-child(2) {
+    position: absolute; bottom: 1px; left: 70%;
     z-index: 8;
     /* 파도보다 뒤로 */
     max-width: 139px; width: 15%;
@@ -606,18 +644,18 @@ body, html {
     position: absolute; top: 80px; left: 75%;
 } */
 /* 모래바닥 */
-.article3 .img-box img:nth-child(3) {
+.article3 .img-box .window-b img:nth-child(1) {
     position: absolute; bottom: 0px;
     width: 100%; height: 68px;
 }
 /* 산호초1 */
-.article3 .img-box img:nth-child(4) {
+.article3 .img-box .window-b img:nth-child(2) {
     position: absolute; bottom: 68px; right: 40%;
     max-width: 60px; width: 15%;
 }
 /* 치어떼 */
-.article3 .img-box img:nth-child(5) {
-    position: absolute; top: 30%; left: 35%;
+.article3 .img-box .window-b img:nth-child(3) {
+    position: absolute; top: 10%; left: 35%;
     max-width: 150px; 
     width: 20%;
 }
