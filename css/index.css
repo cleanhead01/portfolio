@@ -161,7 +161,7 @@ body, html {
 /* 개복치 */
 .article1 .img-box .window-b img:nth-child(1) {
     position: absolute; bottom: 120px; left: 100px;
-    animation: fish1 5s both linear;
+    animation: fish1 20s both linear;
     /* display: none; */
 }
 .article1 .img-box .window-b img:nth-child(1).on {
@@ -220,7 +220,7 @@ body, html {
     position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
     background: rgba(0,0,0,0.5);
     /* transition: all 1s; */
-    /* display: none; */
+    display: none;
 }
 /* 클릭 이벤트 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 .article1 .about-me.on {
@@ -321,12 +321,16 @@ body, html {
     border: 1px solid black; border-radius: 50%;
     /* margin: 0px 20px; */
     text-align: center;
+    margin-left: -10px;
 }
 .article1 .about-me .about-list .career .month {
     text-align: center; 
     /* padding: 5px 50px 15px; */
     font-size: 13px;
     /* position: relative; */
+}
+.article1 .about-me .about-list .career > ul:nth-child(2) .year {
+    margin-right: -10px;
 }
 .article1 .about-me .about-list .career .month > span {
     font-size: 16px;
@@ -532,7 +536,7 @@ body, html {
     z-index: 999999;
     position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
     background: rgba(0,0,0,0.5);
-    display: none;
+    /* display: none; */
 }
 /* 클릭 이벤트 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 .article2 .portfolio.on {
@@ -552,9 +556,10 @@ body, html {
 .article2 .portfolio .port-list .title {
     position: absolute; top: 30%; left: 50%;
     transform: translateX(-50%);
+    width: 80%;
 }
 .article2 .portfolio .port-list .title ul {
-    width: 800px;
+    width: 100%; height: auto;
     text-align: center;
     padding-bottom: 10px;
     border-bottom: 3px solid black; 
@@ -574,7 +579,7 @@ body, html {
 /* 메뉴 클릭 이벤트 ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
 /* 포트폴리오 페이지 메뉴 이미지------------------------------------------------------------- */
 .article2 .portfolio .port-list .content {
-    width: 800px; height: 420px; overflow: hidden;
+    width: 80%; overflow: hidden;
     position: absolute; top: 40%; left: 50%;
     transform: translateX(-50%);
     /* border: 1px solid black; */
@@ -585,7 +590,7 @@ body, html {
     /* p태그 position */
     display: inline-block;
     width: 24%;
-    padding: 30px 10px;
+    padding: 30px 10px 0px;
     animation: port 2s both;
 }
 /* 메뉴 클릭 이벤트 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
@@ -600,6 +605,10 @@ body, html {
 .article2 .portfolio .port-list .content li div {
     position: relative;
     transition: all 0.5s;
+    padding: 10px;
+}
+.article2 .portfolio .port-list .content li div img {
+    width: 100%;
 }
 .article2 .portfolio .port-list .content li div:hover {
     position: relative;
