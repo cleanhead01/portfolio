@@ -154,14 +154,14 @@ body, html {
 }
 /* 종이배 */
 .article1 .img-box .window-t img:nth-child(2) {
-    position: absolute; bottom: 1px; left: 70%;
+    position: absolute; bottom: 10px; left: 70%;
     z-index: 8;
     max-width: 150px; width: 15%;
 }
 /* 개복치 */
 .article1 .img-box .window-b img:nth-child(1) {
     position: absolute; bottom: 120px; left: 100px;
-    animation: fish1 20s both linear;
+    animation: fish1 25s infinite linear;
     /* display: none; */
 }
 .article1 .img-box .window-b img:nth-child(1).on {
@@ -304,7 +304,7 @@ body, html {
 }
 /* 종이배 */
 .article2 .img-box .window-t img:nth-child(2) {
-    position: absolute; bottom: 1px; left: 70%;
+    position: absolute; bottom: 10px; left: 70%;
     z-index: 8;
     /* 파도보다 뒤로 */
     max-width: 139px; width: 15%;
@@ -419,8 +419,8 @@ body, html {
     position: relative;
     /* p태그 position */
     display: inline-block;
-    width: 24%;
-    padding: 30px 10px 0px;
+    width: 20%;
+    padding: 15px 10px;
     animation: port 2s both;
 }
 /* 메뉴 클릭 이벤트 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
@@ -436,8 +436,8 @@ body, html {
     position: relative;
     transition: all 0.5s;
     padding: 10px;
-    background: url(../images/tube.png) no-repeat;
-    background-position: center;
+    /* background: url(../images/tube.png) no-repeat;
+    background-position: center; */
 }
 .article2 .portfolio .port-list .content li div img {
     width: 100%;
@@ -449,14 +449,14 @@ body, html {
 }
 .article2 .portfolio .port-list .content li div::before {
     content: "";
-    position: absolute; top: 30px; bottom: 30px; left: 40px; right: 40px;
+    position: absolute; top: 40px; bottom: 40px; left: 40px; right: 40px;
     background: rgba(155,203,67,0);
     border-radius: 50%;
     transition: all 0.5s;
 }
 .article2 .portfolio .port-list .content li div:hover::before {
     content: "";
-    position: absolute; top: 30px; bottom: 30px; left: 40px; right: 40px;
+    position: absolute; top: 40px; bottom: 40px; left: 40px; right: 40px;
     background: rgba(155,203,67,0.4);
     border-radius: 50%;
     transition: all 0.5s;
@@ -521,7 +521,7 @@ body, html {
 }
 /* 종이배 */
 .article3 .img-box .window-t img:nth-child(2) {
-    position: absolute; bottom: 1px; left: 70%;
+    position: absolute; bottom: 10px; left: 70%;
     z-index: 8;
     /* 파도보다 뒤로 */
     max-width: 139px; width: 15%;
@@ -894,10 +894,12 @@ body, html {
     transform: translateX(-50%);
     font-size: 80px;
     letter-spacing: 0.5em;
+    /* color: blue; */
 }
-/* .article4 h2 span {
-    display: block;
-} */
+.article4 h2 span {
+    /* display: block; */
+    color: red;
+}
 /* 재도전 구역------------------------------------------------------------------------------- */
 .article4 .return {
     position: absolute; top: 50%; left: 50%;
@@ -926,7 +928,7 @@ body, html {
     /* h3의 letter의 가운데 정렬을 위해서 오른쪽에 h3크기의 0.5em(10px)을 넣어준다. */
 }
 .article4 .return .retu img:nth-child(1) {
-    /* animation: turn 3s infinite linear; */
+    animation: turn 3s infinite linear;
     min-width: 180px;
 }
 .article4 .return .retu img:nth-child(2) {
