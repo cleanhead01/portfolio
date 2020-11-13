@@ -154,9 +154,10 @@ body, html {
 }
 /* 종이배 */
 .article1 .img-box .window-t img:nth-child(2) {
-    position: absolute; bottom: 10px; left: 70%;
+    position: absolute; bottom: 10px; left: 100%;
     z-index: 8;
     max-width: 150px; width: 15%;
+    animation: boat1 30s infinite linear;
 }
 /* 개복치 */
 .article1 .img-box .window-b img:nth-child(1) {
@@ -184,9 +185,11 @@ body, html {
 }
 /* 치어떼 */
 .article1 .img-box .window-b img:nth-child(4) {
-    position: absolute; top: 10%; left: 30%;
+    position: absolute; top: 10%; left: 70%;
     max-width: 150px; 
     width: 20%;
+    padding-top: 50px;
+    animation: sub-fish1 10s infinite linear;
 }
 
 /* about me 미역----------------------------------------------------------------------------- */
@@ -304,10 +307,11 @@ body, html {
 }
 /* 종이배 */
 .article2 .img-box .window-t img:nth-child(2) {
-    position: absolute; bottom: 10px; left: 70%;
+    position: absolute; bottom: 10px; left: 100%;
     z-index: 8;
     /* 파도보다 뒤로 */
     max-width: 139px; width: 15%;
+    animation: boat1 30s infinite linear;
 }
 /* 갈매기 */
 /* .article2 .img-box img:nth-child(3) {
@@ -521,10 +525,11 @@ body, html {
 }
 /* 종이배 */
 .article3 .img-box .window-t img:nth-child(2) {
-    position: absolute; bottom: 10px; left: 70%;
+    position: absolute; bottom: 10px; left: 90%;
     z-index: 8;
     /* 파도보다 뒤로 */
     max-width: 139px; width: 15%;
+    animation: boat2 30s infinite linear;
 }
 /* 갈매기 */
 /* .article3 .img-box img:nth-child(3) {

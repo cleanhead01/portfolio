@@ -409,79 +409,186 @@
 
 
 
-
+/* 개복치 */
 @keyframes fish1 {
     0% {
         position: absolute; bottom: 300px; left: 100px;
+        /* transform: rotate(45deg); */
     }
-    /* 10% {
-        position: absolute; bottom: 200px; left: 600px;
+    10% {
+        position: absolute; bottom: 200px;
+        /* transform: rotate(-45deg); */
     }
     20% {
-        position: absolute; bottom: 200px; left: 800px;
-        
+        position: absolute; bottom: 400px;
+        /* transform: rotate(45deg); */
     }
     30% {
-        position: absolute; bottom: 200px; left: 900px;
-        
+        position: absolute; bottom: 200px;
+        /* transform: rotate(-45deg); */
     }
     40% {
-        position: absolute; bottom: 200px; left: 1100px;
+        position: absolute; bottom: 400px;
+        /* transform: rotate(45deg); */
     }
     50% {
-        position: absolute; bottom: 200px; left: 1300px;
+        position: absolute; bottom: 200px;
+        /* transform: rotate(-45deg); */
     }
     60% {
-        position: absolute; bottom: 200px; left: 1400px;
+        position: absolute; bottom: 400px;
+        /* transform: rotate(45deg); */
     }
     70% {
-        position: absolute; bottom: 200px; left: 1600px;
+        position: absolute; bottom: 200px;
+        /* transform: rotate(-45deg); */
     }
     80% {
-        position: absolute; bottom: 200px; left: 1800px;
+        position: absolute; bottom: 400px;
+        /* transform: rotate(45deg); */
     }
     90% {
         opacity: 1;
-    } */
+        /* transform: rotate(-45deg); */
+    }
     100% {
         position: absolute; bottom: 300px; left: 4500px;
         opacity: 1;
+        /* transform: rotate(45deg); */
     }
 }
-@keyframes fish2 {
+/* 아티클1,2 종이배 */
+@keyframes boat1 {
     0% {
-        position: absolute; bottom: 120px; left: 1900px;
-        opacity: 1;
+        position: absolute; bottom: 10px; left: 100%;
+        transform: rotate(5deg);
+        opacity: 0;
     }
     10% {
-        
+        transform: rotate(-5deg);
+        opacity: 1;
     }
     20% {
-        
+        transform: rotate(5deg);
         
     }
     30% {
+        transform: rotate(-5deg);
         
     }
     40% {
-        
+        transform: rotate(5deg);
     }
     50% {
-        
+        transform: rotate(-5deg);
     }
     60% {
-        
+        transform: rotate(5deg);
     }
     70% {
-        
+        transform: rotate(-5deg);
     }
     80% {
-        
+        transform: rotate(5deg);
     }
     90% {
-        
+        transform: rotate(-5deg);
+        opacity: 1;
     }
     100% {
+        position: absolute; bottom: 10px; left: 0%;
+        opacity: 0;
+        transform: rotate(5deg);
+    }
+}
+/* 아티클3 종이배 */
+@keyframes boat2 {
+    0% {
+        position: absolute; bottom: 10px; left: 90%;
+        transform: rotate(5deg);
+        opacity: 0;
+    }
+    10% {
+        transform: rotate(-5deg);
+        opacity: 1;
+    }
+    20% {
+        transform: rotate(5deg);
         
+    }
+    30% {
+        transform: rotate(-5deg);
+        
+    }
+    40% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    70% {
+        transform: rotate(-5deg);
+    }
+    80% {
+        transform: rotate(5deg);
+    }
+    90% {
+        transform: rotate(-5deg);
+        opacity: 1;
+    }
+    100% {
+        position: absolute; bottom: 10px; left: 0%;
+        opacity: 0;
+        transform: rotate(5deg);
+    }
+}
+/* 치어떼 */
+@keyframes sub-fish1 {
+    0% {
+        position: absolute; top: 10%; left: 70%;
+    }
+    10% {
+        position: absolute; top: 30%;
+    }
+    20% {
+        transform: rotate(0turn);
+        position: absolute; top: 20%;
+    }
+    30% {
+        transform: rotate(1turn);
+        position: absolute; top: 30%;
+    }
+    40% {
+        transform: rotate(1turn);
+        position: absolute; top: 20%;
+    }
+    50% {
+        transform: rotate(1turn);
+        position: absolute; top: 30%;
+    }
+    60% {
+        transform: rotate(1turn);
+        position: absolute; top: 20%;
+    }
+    70% {
+        transform: rotate(1turn);
+        position: absolute; top: 30%;
+    }
+    80% {
+        transform: rotate(2turn);
+        position: absolute; top: 20%;
+    }
+    90% {
+        transform: rotate(2turn);
+        position: absolute; top: 30%;
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(2turn);
+        position: absolute; top: 30%; left: 0%;
+        opacity: 0;
     }
 }
