@@ -413,48 +413,58 @@
 @keyframes fish1 {
     0% {
         position: absolute; bottom: 300px; left: 100px;
-        /* transform: rotate(45deg); */
+        transform: rotate(30deg);
+        transform-origin: left bottom;
     }
     10% {
         position: absolute; bottom: 200px;
-        /* transform: rotate(-45deg); */
+        transform: rotate(0deg);
+        transform-origin: right center;
     }
     20% {
-        position: absolute; bottom: 400px;
-        /* transform: rotate(45deg); */
+        position: absolute; bottom: 200px;
+        transform: rotate(0deg);
     }
     30% {
-        position: absolute; bottom: 200px;
-        /* transform: rotate(-45deg); */
+        position: absolute; bottom: 400px;
+        transform: rotate(-30deg);
+        transform-origin: right top;
     }
     40% {
         position: absolute; bottom: 400px;
-        /* transform: rotate(45deg); */
+        transform: rotate(0deg);
+        transform-origin: right center;
     }
     50% {
         position: absolute; bottom: 200px;
-        /* transform: rotate(-45deg); */
+        transform: rotate(30deg);
+        transform-origin: left center;
     }
     60% {
-        position: absolute; bottom: 400px;
-        /* transform: rotate(45deg); */
+        position: absolute; bottom: 200px;
+        transform: rotate(0deg);
+        transform-origin: right center;
     }
     70% {
-        position: absolute; bottom: 200px;
-        /* transform: rotate(-45deg); */
+        position: absolute; bottom: 400px;
+        transform: rotate(-30deg);
+        transform-origin: left center;
     }
     80% {
         position: absolute; bottom: 400px;
-        /* transform: rotate(45deg); */
+        transform: rotate(0deg);
+        transform-origin: right center;
     }
     90% {
         opacity: 1;
-        /* transform: rotate(-45deg); */
+        transform: rotate(30deg);
+        transform-origin: left center;
     }
     100% {
-        position: absolute; bottom: 300px; left: 4500px;
+        position: absolute; bottom: 300px; left: 5000px;
         opacity: 1;
-        /* transform: rotate(45deg); */
+        transform: rotate(0deg);
+        transform-origin: right center;
     }
 }
 /* 아티클1,2 종이배 */
@@ -555,6 +565,7 @@
     }
     20% {
         transform: rotate(0turn);
+        transform-origin: top center;
         position: absolute; top: 20%;
     }
     30% {
@@ -579,6 +590,7 @@
     }
     80% {
         transform: rotate(2turn);
+        transform-origin: top center;
         position: absolute; top: 20%;
     }
     90% {

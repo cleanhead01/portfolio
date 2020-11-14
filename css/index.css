@@ -337,6 +337,8 @@ body, html {
     position: absolute; top: 10%; left: 35%;
     max-width: 150px; 
     width: 20%;
+    padding-top: 50px;
+    animation: sub-fish1 10s infinite linear;
 }
 /* portfoilo 산호초1----------------------------------------------------------------------------- */
 .article2 .seaweed1 {
@@ -547,9 +549,11 @@ body, html {
 }
 /* 치어떼 */
 .article3 .img-box .window-b img:nth-child(3) {
-    position: absolute; top: 10%; left: 35%;
+    position: absolute; top: 10%; left: 50%;
     max-width: 150px; 
     width: 20%;
+    padding-top: 50px;
+    animation: sub-fish1 10s infinite linear;
 }
 /* skill 미역----------------------------------------------------------------------------- */
 .article3 .seaweed1 {
