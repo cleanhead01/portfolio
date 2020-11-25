@@ -327,10 +327,10 @@ body, html {
     position: absolute; bottom: 68px; right: 10%;
     max-width: 51px; width: 15%;
 }
-/* 산호초2 */
+/* 산호초1 */
 .article2 .img-box .window-b img:nth-child(3) {
     position: absolute; bottom: 68px; left: 15%;
-    max-width: 60px; width: 15%;
+    max-width: 80px; width: 15%;
 }
 /* 치어떼 */
 .article2 .img-box .window-b img:nth-child(4) {
@@ -340,11 +340,11 @@ body, html {
     padding-top: 50px;
     animation: sub-fish1 10s infinite linear;
 }
-/* portfoilo 산호초1----------------------------------------------------------------------------- */
+/* portfoilo 산호초2----------------------------------------------------------------------------- */
 .article2 .seaweed1 {
     position: absolute; bottom: 68px; right: 40%;
     /* border: 1px solid black; */
-    max-width: 80px; width: 15%;
+    max-width: 60px; width: 15%;
 }
 .article2 .seaweed1 img {
     vertical-align: bottom;
