@@ -67,17 +67,19 @@ body, html {
     height: 100%;
 }
 .tuto-box {
-    /* background: green; */
-    height: 100%; width: 100%;
-    position: absolute; top: 0px; left: 0px;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
 }
 /* 튜토리얼 이미지---------------------------------------------------------------------------- */
 .tuto-box .img-box {
-    position: absolute; bottom: 55%; left: 45%;
-    transform: translateX(-45%);
-    width: 300px; height: 151px;
+    /* position: absolute; bottom: 55%; left: 45%;
+    transform: translateX(-45%); */
+    /* width: 300px; height: 151px; */
     /* border: 1px solid black; */
     /* height: 300px; */
+    margin-bottom: 20px;
+    /* text-align: center; */
 }
 .tuto-box .img-box img:nth-child(1) {
     transform: translateX(20px);
@@ -90,13 +92,15 @@ body, html {
 }
 .tuto-box .img-box img:nth-child(3) {
     display: block;
+    /* margin: 0px auto; */
 }
 /* 튜토리얼 텍스트---------------------------------------------------------------------------- */
 .tuto-box .tuto-txt {
-    position: absolute; top: 50%; left: 45%;
-    transform: translateX(-45%);
+    /* position: absolute; top: 50%; left: 50%;
+    transform: translateX(-50%); */
     /* border: 1px solid black; */
-    /* width: 40%; */ min-width: 300px;
+    /* width: 40%; */
+    /* min-width: 300px; */
 }
 .tuto-box .tuto-txt h2 {
     font-size: 40px; font-family: 'TmoneyRoundWindExtraBold';
@@ -223,7 +227,7 @@ body, html {
     position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
     background: rgba(0,0,0,0.5);
     /* transition: all 1s; */
-    display: none;
+    display: none;    
 }
 /* 클릭 이벤트 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 .article1 .about-me.on {
@@ -234,6 +238,8 @@ body, html {
     background: #fff;
     /* display: inline-block; */
     position: fixed; top: 0; left: 18%; right: 18%; bottom: 0px;
+    min-width: 1230px;
+    /* 반응형 패스 */
 }
 /* 한줄코멘트 */
 .article1 .about-me .about-list .comment {
@@ -246,28 +252,31 @@ body, html {
     /* position: absolute; top: 20%; left: 50%; */
     /* transform: translateX(-50%); */
     width: 100%; height: 100%;
-    background: url(../images/sub.png) no-repeat;
-    background-position-x: 100px;
 }
 .article1 .about-me .about-list .profile .text {
-    width: 50%;
+    /* width: 50%; */
     padding-top: 50px;
-    float: right;
+    text-align: center;
 }
 /* 타임라인------------------------------------------------------------------------------------- */
 /* 텍스트 */
+.article1 .about-me .about-list .text > ul {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    text-align: left;
+}
+.article1 .about-me .about-list .text > ul:nth-child(1) {
+    width: 25%;
+}
 .article1 .about-me .about-list .text > ul li {
     padding-bottom: 10px;
 }
 .article1 .about-me .about-list .text > ul li span:nth-child(1) {
     font-size: 20px; font-family: 'TmoneyRoundWindExtraBold';
-    display: inline-block;
-    vertical-align: middle;
-    width: 150px;
 }
 .article1 .about-me .about-list .text p {
     font-size: 30px; font-family: 'TmoneyRoundWindExtraBold';
-    vertical-align: middle;
     color: lightcoral;
     padding: 30px 0px 10px;
 }
@@ -382,6 +391,7 @@ body, html {
 .article2 .portfolio .port-list {
     position: absolute; top: 0; left: 18%; right: 18%; bottom: 0px;
     background: #fff;
+    min-width: 1230px;
 }
 .article2 .portfolio .port-list .comment {
     text-align: center;
@@ -627,6 +637,7 @@ body, html {
 .article3 .skills .skills-list {
     background: #fff;
     position: absolute; top: 0px; bottom: 0px; left: 18%; right: 18%;
+    min-width: 1230px;
 }
 /* 한줄코멘트 */
 .article3 .skills .skills-list .comment {
@@ -764,6 +775,7 @@ body, html {
     background: #fff;
     /* display: inline-block; */
     position: absolute; top: 0; left: 18%; right: 18%; bottom: 0px;
+    min-width: 1230px;
 }
 /* 한줄코멘트 */
 .article3 .contact .contact-list .comment {
@@ -897,30 +909,26 @@ body, html {
     height: 100%;
     position: relative;
 }
-/* 게임오버 텍스트 */
-.article4 h2 {
-    position: absolute; top: 20%; left: 50%;
-    transform: translateX(-50%);
-    font-size: 80px;
-    letter-spacing: 0.5em;
-    /* color: blue; */
-}
-.article4 h2 span {
-    /* display: block; */
-    color: red;
-}
 /* 재도전 구역------------------------------------------------------------------------------- */
 .article4 .return {
+    text-align: center;
+    /* background: red; */
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    padding-top: 0px;
-    /* background: red; */
 }
-.article4 .return > div {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0px 50px;
+/* 게임오버 텍스트 */
+.article4 .gameover {
+    text-align: center;
+    /* color: blue; */
+}
+.article4 .gameover p {
+    font-size: 5em; font-weight: bold;
+    /* display: inline-block; */
+    letter-spacing: 0.5em;
+    color: #00f;
+}
+.article4 .gameover p:nth-child(2) {
+    color: #f00;
 }
 /* 죽은 개복치 이미지 */
 /* .article4 .return .fish {
@@ -932,8 +940,9 @@ body, html {
     position: relative;
     /* border: 5px solid black; */
     /* width: 250px; height: 250px; */
-    line-height: 250px;
+    /* line-height: 250px; */
     margin-right: 10px;
+    margin: 70px 0px 40px 0px;
     /* h3의 letter의 가운데 정렬을 위해서 오른쪽에 h3크기의 0.5em(10px)을 넣어준다. */
 }
 .article4 .return .retu img:nth-child(1) {
