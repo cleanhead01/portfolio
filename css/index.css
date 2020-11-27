@@ -256,29 +256,36 @@ body, html {
 .article1 .about-me .about-list .profile .text {
     /* width: 50%; */
     padding-top: 50px;
-    text-align: center;
 }
 /* 타임라인------------------------------------------------------------------------------------- */
+/* 이미지 */
+.article1 .about-me .about-list .text > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    text-align: center;
+    padding-top: 10px;
+    /* 옆에 텍스트 제목에 패딩 탑값 10px 들어가있어서 맞추기 위해 넣는다. */
+}
 /* 텍스트 */
 .article1 .about-me .about-list .text > ul {
     display: inline-block;
-    width: 70%;
     vertical-align: top;
-    text-align: left;
 }
 .article1 .about-me .about-list .text > ul:nth-child(1) {
-    width: 25%;
+    width: 100%;
 }
 .article1 .about-me .about-list .text > ul li {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: 16px;
 }
 .article1 .about-me .about-list .text > ul li span:nth-child(1) {
     font-size: 20px; font-family: 'TmoneyRoundWindExtraBold';
 }
 .article1 .about-me .about-list .text p {
-    font-size: 30px; font-family: 'TmoneyRoundWindExtraBold';
+    font-size: 25px; font-family: 'TmoneyRoundWindExtraBold';
     color: lightcoral;
-    padding: 30px 0px 10px;
+    padding-top: 10px;
 }
 /* about me 나가기 버튼--------------------------------------------------------------------- */
 .article1 .about-me .about-list .close {
