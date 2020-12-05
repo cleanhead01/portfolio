@@ -33,6 +33,19 @@
     // });
 
 
+    // 개복치 호버했을 때 멘트 나타나고 사라지기
+    $('.article1 .img-box .window-b .fish').hover(
+        function(){
+        $(this).find('p').stop().animate({
+            opacity: '1'}, 300)
+        },
+        function(){
+        $(this).find('p').stop().animate({
+            opacity: '0'}, 300)
+        }
+    )
+
+
     
 
     // 섹션별로 이동하는 가로스크롤 휠 이벤트
