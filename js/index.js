@@ -16,7 +16,7 @@
         $('body, html').stop().animate({
             scrollLeft: $(window).width()
         }, 500)
-        $('.article1 .img-box img:nth-child(2)').addClass('on')
+        $('.article1 .img-box .window-b .fish').addClass('on')
     })
 
 
@@ -141,8 +141,10 @@
 
 
 
-
-    
+    // 재도전 누르면 개복치가 다시 on이 빠지면서 맨처음으로
+    $('.article4 .return .retu').on('click', function(){
+        $('.article1 .img-box .window-b .fish').removeClass('on')
+    })
 
 
 
