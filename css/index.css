@@ -507,7 +507,7 @@ body, html {
 }
 /* about me 나가기 버튼--------------------------------------------------------------------- */
 .article1 .about-me .about-list .close {
-    position: absolute; top: 50px; right: 5%;
+    position: absolute; top: 50px; left: 5%;
     text-align: center;
     font-weight: bold;
 }
@@ -952,7 +952,7 @@ body, html {
 }
 /* portfoilo 나가기 버튼--------------------------------------------------------------------- */
 .article2 .portfolio .port-list .close {
-    position: absolute; top: 50px; right: 5%;
+    position: absolute; top: 50px; left: 5%;
     text-align: center;
     font-weight: bold;
 }
@@ -1431,7 +1431,7 @@ body, html {
 }
 /* skills 나가기 버튼--------------------------------------------------------------------- */
 .article3 .skills .skills-list .close {
-    position: absolute; top: 50px; right: 5%;
+    position: absolute; top: 50px; left: 5%;
     text-align: center;
     font-weight: bold;
 }
@@ -1575,7 +1575,7 @@ body, html {
 }
 /* contact 나가기 버튼--------------------------------------------------------------------- */
 .article3 .contact .contact-list .close {
-    position: absolute; top: 50px; right: 5%;
+    position: absolute; top: 50px; left: 5%;
     text-align: center;
     font-weight: bold;
 }
