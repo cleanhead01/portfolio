@@ -16,6 +16,8 @@
 body, html {
     height: 100%; width: 100%;
     overflow-x: hidden;
+    /* 세로 스크롤바는 마우스가 맨 밑으로 가면 .cursor때문에 스크롤이 생기는걸 방지 */
+    overflow-y: hidden;
 }
 .magic {
     height: 100%; width: 500%;
@@ -61,36 +63,6 @@ body, html {
 .wait-each img:nth-child(6) {
     animation: wait6 3s both ease-in-out;    
 }
-/* 물방울 커서----------------------------------------------------------------------------- */
-.cursor {
-    position: absolute; top: 0px; left: 0px;
-    z-index: 999999999999999999999999999999999999;
-    width: 50px; height: 50px;
-    margin: 10px 0px 0px 10px;
-    /* 마진값으로 빈공간을 안만들어주면 클릭이 안됨 */
-    display: none;
-}
-.cursor div {
-    
-}
-.cursor span {
-    display: inline-block;
-    width: 20px; height: 20px;
-    border-radius: 50%;
-    background: rgba(135, 206, 235, 0.8);
-    animation: bubble 2s infinite linear;
-    position: absolute; top: 50%; left: 0px;
-}
-.cursor span:nth-child(1) {left: 10px; animation-delay: 1.5s;}
-.cursor span:nth-child(2) {left: 30px; animation-delay: 0.6s;}
-.cursor span:nth-child(3) {left: 23px; animation-delay: 0.3s;}
-.cursor span:nth-child(4) {left: 17px; animation-delay: 1.2s;}
-.cursor span:nth-child(5) {left: 5px; animation-delay: 0.1s;}
-.cursor span:nth-child(6) {left: 13px; animation-delay: 0.9s;}
-/* .cursor span:nth-child(7) {left: 30px; animation-delay: 1.2s;}
-.cursor span:nth-child(8) {left: 18px; animation-delay: 1.3s;}
-.cursor span:nth-child(9) {left: 43px; animation-delay: 1.4s;}
-.cursor span:nth-child(10) {left: 35px; animation-delay: 0.5s;} */
 /* 튜토리얼 텍스트---------------------------------------------------------------------------- */
 #header {
     position: relative;
@@ -1674,6 +1646,36 @@ body, html {
 
 
 
+/* 물방울 커서----------------------------------------------------------------------------- */
+.cursor {
+    position: absolute; top: 0px; left: 0px;
+    z-index: 9999999999999999999999999999999999999999999999999999;
+    width: 50px; height: 50px;
+    margin: 10px 0px 0px 10px;
+    /* 마진값으로 빈공간을 안만들어주면 클릭이 안됨 */
+    display: none;
+}
+.cursor div {
+    
+}
+.cursor span {
+    display: inline-block;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: rgba(135, 206, 235, 1);
+    animation: bubble 2s infinite linear;
+    position: absolute; top: 50%; left: 0px;
+}
+.cursor span:nth-child(1) {left: 10px; animation-delay: 1.5s;}
+.cursor span:nth-child(2) {left: 30px; animation-delay: 0.6s;}
+.cursor span:nth-child(3) {left: 23px; animation-delay: 0.3s;}
+.cursor span:nth-child(4) {left: 17px; animation-delay: 1.2s;}
+.cursor span:nth-child(5) {left: 5px; animation-delay: 0.1s;}
+.cursor span:nth-child(6) {left: 13px; animation-delay: 0.9s;}
+/* .cursor span:nth-child(7) {left: 30px; animation-delay: 1.2s;}
+.cursor span:nth-child(8) {left: 18px; animation-delay: 1.3s;}
+.cursor span:nth-child(9) {left: 43px; animation-delay: 1.4s;}
+.cursor span:nth-child(10) {left: 35px; animation-delay: 0.5s;} */
 
 
 
