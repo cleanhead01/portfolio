@@ -19,16 +19,59 @@
         $('.article1 .img-box .window-b .fish').addClass('on')
     })
 
-    $(window).mousemove(function(e){
-        var mouseX = e.pageX;
-        var mouseY = e.pageY;
+    // 마우스를 따라다니는 html의 간단한 풀이방법
+    // $(window).mousemove(function(e){
+    //     var mouseX = e.pageX;
+    //     var mouseY = e.pageY;
 
-        $('.cursor').show().css({
-            left: mouseX+'px',
-            top: mouseY+'px',
-            transition: 'all 0.1s'
-        })
-    })
+    //     $('.cursor').show().css({
+    //         left: mouseX+'px',
+    //         top: mouseY+'px',
+    //         transition: 'all 0.1s'
+    //     })
+    // })
+
+
+    // 마우스를 따라다니는 방울의 모든 함수 아직 완벽 분석이 안됐음
+    var mousePos = {};
+        
+    function getRandomInt(min, max) {
+    return Math.round(Math.random() * (max - min + 1)) + min;
+    }
+
+    $(window).mousemove(function(e) {
+        mousePos.x = e.pageX;
+        mousePos.y = e.pageY;
+    });
+
+    $(window).mouseleave(function(e) {
+        mousePos.x = -1;
+        mousePos.y = -1;
+    });
+
+    var draw = setInterval(function(){
+        if(mousePos.x > 0 && mousePos.y > 0){
+
+            var range = 15;
+
+            // 랜덤으로 색을 불러내서 변수에 담기
+            // var color = "background: rgb("+getRandomInt(0,255)+","+getRandomInt(0,255)+","  +getRandomInt(0,255)+");";
+            // 하늘색으로 지정해서 변수에 담기
+            var color = "background: rgb(135,206,235);";
+
+
+            var sizeInt = getRandomInt(5, 20);
+            // 물방을의 사이즈를 5 ~ 20사이의 px값을 랜덤으로 불러내기
+            size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
+
+            var left = "left: " + getRandomInt(mousePos.x-range-sizeInt, mousePos.x+range) + "px;";
+
+            var top = "top: " + getRandomInt(mousePos.y-range-sizeInt, mousePos.y+range) + "px;"; 
+
+            var style = left+top+color+size;
+            $("<div class='bubble' style='" + style + "'></div>").appendTo('.magic').one  ("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function (){$(this).remove();}); 
+        }
+    }, 50);
 
 
     // 가로스크롤 휠 이벤트

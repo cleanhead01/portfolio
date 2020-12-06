@@ -1647,16 +1647,14 @@ body, html {
 
 
 /* 물방울 커서----------------------------------------------------------------------------- */
-.cursor {
+
+/* .cursor {    마우스를 따라다니는 html의 간단한 풀이방법
     position: absolute; top: 0px; left: 0px;
     z-index: 9999999999999999999999999999999999999999999999999999;
     width: 50px; height: 50px;
     margin: 10px 0px 0px 10px;
-    /* 마진값으로 빈공간을 안만들어주면 클릭이 안됨 */
+    마진값으로 빈공간을 안만들어주면 클릭이 안됨
     display: none;
-}
-.cursor div {
-    
 }
 .cursor span {
     display: inline-block;
@@ -1672,11 +1670,22 @@ body, html {
 .cursor span:nth-child(4) {left: 17px; animation-delay: 1.2s;}
 .cursor span:nth-child(5) {left: 5px; animation-delay: 0.1s;}
 .cursor span:nth-child(6) {left: 13px; animation-delay: 0.9s;}
-/* .cursor span:nth-child(7) {left: 30px; animation-delay: 1.2s;}
+.cursor span:nth-child(7) {left: 30px; animation-delay: 1.2s;}
 .cursor span:nth-child(8) {left: 18px; animation-delay: 1.3s;}
 .cursor span:nth-child(9) {left: 43px; animation-delay: 1.4s;}
 .cursor span:nth-child(10) {left: 35px; animation-delay: 0.5s;} */
 
+.bubble {
+    pointer-events: none;
+    position: absolute; 
+    width: 0px;
+    height: 0px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 50%; 
+    background: gray;
+    animation: bubble 1s both ease-in-out;
+    opacity: 0.5;
+  }
 
 
 
