@@ -177,6 +177,29 @@
         opacity: 0;
     }
 }
+/* 마우스 커서 물방울 */
+@keyframes bubble {
+    0% {
+        opacity: 0;
+        transform: translateY(0%);
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {}
+    30% {}
+    40% {}
+    50% {}
+    60% {}
+    70% {}
+    80% {}
+    90% {}
+    100% {
+        opacity: 0;
+        transform: translateY(-400%);
+    }
+}
+
 /* 산호초+미역의 클릭버튼 */
 @keyframes click {
     0% {

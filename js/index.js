@@ -19,6 +19,17 @@
         $('.article1 .img-box .window-b .fish').addClass('on')
     })
 
+    $(window).mousemove(function(e){
+        var mouseX = e.pageX;
+        var mouseY = e.pageY;
+
+        $('.cursor').show().css({
+            left: mouseX+'px',
+            top: mouseY+'px',
+            transition: 'all 0.1s'
+        })
+    })
+
 
     // 가로스크롤 휠 이벤트
 
@@ -55,13 +66,27 @@
             secIndex = $(this).prev().index()
             if (secIndex < 0) {
                 secindex = 0
+                // 게임시작 페이지에서 휠을 위로 굴리면 재도전으로 넘어가지않게
+            } else if (secIndex === 0) {
+                secIndex = 1
+                // 게임시작을 누르고 첫 페이지에서 휠을 위로 굴리면 게임시작페이지로 넘어가지 않게
             }
         } else if (wh < 0) {
             secIndex = $(this).next().index()
             if (secIndex < 0) {
                 secIndex = 5
+                // 재도전페이지에서 휠을 밑으로 굴렸을 때 게임시작으로 넘어가지 않게
+            } else if (secIndex === 1) {
+                secIndex = 0
+                // 게임시작을 누르지 않고 휠을 내렸을 때 넘어가지 않게
             }
-        }
+        } 
+        // else if (wh = 0) {
+        //     secIndex = $(this).next().index()
+        //     if (secIndex = 1) {
+        //         secIndex = 0
+        //     }
+        // }
         $('html, body').stop().animate({
             scrollLeft : secIndex * $(window).width()
         }, 1000)

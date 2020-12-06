@@ -61,6 +61,36 @@ body, html {
 .wait-each img:nth-child(6) {
     animation: wait6 3s both ease-in-out;    
 }
+/* 물방울 커서----------------------------------------------------------------------------- */
+.cursor {
+    position: absolute; top: 0px; left: 0px;
+    z-index: 999999999999999999999999999999999999;
+    width: 50px; height: 50px;
+    margin: 10px 0px 0px 10px;
+    /* 마진값으로 빈공간을 안만들어주면 클릭이 안됨 */
+    display: none;
+}
+.cursor div {
+    
+}
+.cursor span {
+    display: inline-block;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: rgba(135, 206, 235, 0.8);
+    animation: bubble 2s infinite linear;
+    position: absolute; top: 50%; left: 0px;
+}
+.cursor span:nth-child(1) {left: 10px; animation-delay: 1.5s;}
+.cursor span:nth-child(2) {left: 30px; animation-delay: 0.6s;}
+.cursor span:nth-child(3) {left: 23px; animation-delay: 0.3s;}
+.cursor span:nth-child(4) {left: 17px; animation-delay: 1.2s;}
+.cursor span:nth-child(5) {left: 5px; animation-delay: 0.1s;}
+.cursor span:nth-child(6) {left: 13px; animation-delay: 0.9s;}
+/* .cursor span:nth-child(7) {left: 30px; animation-delay: 1.2s;}
+.cursor span:nth-child(8) {left: 18px; animation-delay: 1.3s;}
+.cursor span:nth-child(9) {left: 43px; animation-delay: 1.4s;}
+.cursor span:nth-child(10) {left: 35px; animation-delay: 0.5s;} */
 /* 튜토리얼 텍스트---------------------------------------------------------------------------- */
 #header {
     position: relative;
@@ -137,7 +167,7 @@ body, html {
     position: relative;
     height: 100%;
     /* 아티클2,3 으로 넘어가면 개복치가 뒤로 숨으면서 호버가 안먹힘 그래서 아티클1을 맨위로 올림 */
-    z-index: 9999999999999999999999999999999999;
+    z-index: 999999999999999999;
 }
 .article1 .img-box {
     height: 100%;
@@ -784,7 +814,7 @@ body, html {
     display: block;
     text-align: center;
     padding-top: 5px;
-    font-weight: bold;
+    font-weight: bold; font-size: 18px;
     position: absolute; top: 100%;
     width: 100%;
 }
@@ -792,9 +822,6 @@ body, html {
     animation: click 1s infinite;
     transform: translateY(20%);
     color: blue;
-}
-.article2 .seaweed1 .click {
-    font-size: 20px;
 }
 /* portfolid 산호초 멘트 */
 .article2 .seaweed1 p {
@@ -828,7 +855,8 @@ body, html {
 
 /* 포트폴리오 페이지--------------------------------------------------------------------------- */
 .article2 .portfolio {
-    z-index: 999999;
+    /* 개복치가 상세페이지 눌렀을 때 더 위로 올라오는걸 방지 */
+    z-index: 999999999999999999;
     position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
     background: rgba(0,0,0,0.5);
     display: none;
@@ -1307,7 +1335,8 @@ body, html {
 
 /* skills 페이지---------------------------------------------------------------------------- */
 .article3 .skills {
-    z-index: 999999;
+    /* 개복치가 상세페이지 눌렀을 때 더 위로 올라오는걸 방지 */
+    z-index: 999999999999999999;
     position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
     background: rgba(0,0,0,0.5);
     display: none;
@@ -1444,7 +1473,8 @@ body, html {
 
 /* contact 페이지---------------------------------------------------------------------------- */
 .article3 .contact {
-    z-index: 999999;
+    /* 개복치가 상세페이지 눌렀을 때 더 위로 올라오는걸 방지 */
+    z-index: 999999999999999999;
     position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
     background: rgba(0,0,0,0.5);
     display: none;
@@ -1640,6 +1670,7 @@ body, html {
     padding-top: 20px; padding-left: 20px;
     letter-spacing: 0.5em;
 }
+
 
 
 
