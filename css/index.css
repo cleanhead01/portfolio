@@ -1565,14 +1565,14 @@ body, html {
     /* font-family: 'TmoneyRoundWindExtraBold'; */
     padding: 15px 25px; 
     border-radius: 50px;
-    background: red; color: #fff;
+    background: #ddd; color: #555;
 }
 .article3 .inquiry-form .submit button:hover {
     font-size: 20px; font-weight: bold;
     /* font-family: 'TmoneyRoundWindExtraBold'; */
     padding: 15px 25px; 
     border-radius: 50px;
-    background: blue; color: #fff;
+    background: skyblue; color: #333;
     transition: all 0.5s;
 }
 /* contact 나가기 버튼--------------------------------------------------------------------- */
