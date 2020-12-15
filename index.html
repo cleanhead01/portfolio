@@ -7,9 +7,12 @@
     <link rel="icon" href="images/fish-favi.ico" />
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="css/fullpage.min.css">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/jquery-migrate-1.4.1.min.js"></script>
     <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/fullpage.js@2.9.4/dist/jquery.fullpage.min.js"></script> -->
     <title>portfolio-fish</title>
 </head>
 <body>
@@ -29,8 +32,8 @@
     </div>
 
 
-    <div class="magic">
-        <section id="section">
+    <div class="magic" id="fullpage">
+        <section id="section" class="section">
             <header id="header" class="float">
                 <div class="tuto-box">
                     <div class="img-box">
@@ -582,8 +585,13 @@
 
 
 
-    
+    <!-- <script src="js/fullpage.js"></script> -->
     <script src="js/index.js"></script>
+    <!-- <script>
+        new fullpage('#fullpage', {
+            keyboardScrolling: true
+        });
+    </script> -->
 
 </body>
 </html>
